@@ -1,0 +1,441 @@
+log file: /home/shori/act_logs/run_20260515_151448_replan5_arm_only.log
+command: /home/shori/run_act_policy_on_limo.py --policy-path /home/shori/outputs/train/act_limo_cobot_20hz_target_h10_chunk50/checkpoints/015000/pretrained_model --limo-url http://192.168.0.161:8001 --command-url http://192.168.0.161:8002 --angles-url http://192.168.0.161:8002/angles --force-angles-url --command-mode http --action-mode target --hz 10 --steps 300 --replan-steps 5 --action-scale 0.5 --joint-max-delta-deg 3,3,1.5,3,1,1 --speed 20 --fallback-gripper 80 --enable-motion --gripper-mode none --log-file /home/shori/act_logs/run_20260515_151448_replan5_arm_only.log
+loading policy: /home/shori/outputs/train/act_limo_cobot_20hz_target_h10_chunk50/checkpoints/015000/pretrained_model
+Loading weights from local directory
+policy loaded
+motion enabled: HTTP http://192.168.0.161:8002 speed=20
+policy: /home/shori/outputs/train/act_limo_cobot_20hz_target_h10_chunk50/checkpoints/015000/pretrained_model
+observation: http://192.168.0.161:8001/state.json + /image.jpg
+fallback angles: http://192.168.0.161:8002/angles
+Ctrl-C to stop
+step=0 mode=target current=[-95.97, 2.02, 2.54, -99.49, 5.88, 33.13] raw_delta=[-4.326, 3.086, -0.13, -4.382, -0.16, -0.17] scaled_delta=[-2.163, 1.543, -0.065, -2.191, -0.08, -0.085] clamped_delta=[-2.163, 1.543, -0.065, -2.191, -0.08, -0.085] target=[-98.13, 3.56, 2.48, -101.68, 5.8, 33.04] gripper=80.0->model:81.1 command:81.1 qpos_source=forced qpos_stale_steps=0 qpos_age=0.003 qpos_stale=ok
+  http sent=[] server_delta=None
+step=1 mode=target current=[-97.11, 3.07, 2.54, -99.58, 5.88, 33.13] raw_delta=[-3.124, 2.162, -0.117, -4.381, -0.114, -0.121] scaled_delta=[-1.562, 1.081, -0.059, -2.19, -0.057, -0.06] clamped_delta=[-1.562, 1.081, -0.059, -2.19, -0.057, -0.06] target=[-98.67, 4.15, 2.48, -101.77, 5.82, 33.07] gripper=80.0->model:81.1 command:81.1 qpos_source=forced qpos_stale_steps=0 qpos_age=-0.002 qpos_stale=ok
+  http sent=[] server_delta=None
+step=2 mode=target current=[-97.11, 3.07, 2.54, -99.66, 5.88, 33.13] raw_delta=[-3.11, 2.147, -0.12, -4.308, -0.13, -0.12] scaled_delta=[-1.555, 1.073, -0.06, -2.154, -0.065, -0.06] clamped_delta=[-1.555, 1.073, -0.06, -2.154, -0.065, -0.06] target=[-98.66, 4.14, 2.48, -101.81, 5.82, 33.07] gripper=80.0->model:81.1 command:81.1 qpos_source=forced qpos_stale_steps=0 qpos_age=0.001 qpos_stale=ok
+  http sent=[] server_delta=None
+step=3 mode=target current=[-97.91, 3.6, 2.54, -99.66, 5.88, 33.13] raw_delta=[-2.267, 1.592, -0.114, -4.159, -0.114, -0.094] scaled_delta=[-1.133, 0.796, -0.057, -2.08, -0.057, -0.047] clamped_delta=[-1.133, 0.796, -0.057, -2.08, -0.057, -0.047] target=[-99.04, 4.4, 2.48, -101.74, 5.82, 33.08] gripper=80.0->model:81.2 command:81.2 qpos_source=forced qpos_stale_steps=0 qpos_age=-0.004 qpos_stale=ok
+  http sent=[] server_delta=None
+step=4 mode=target current=[-97.91, 3.6, 2.54, -99.66, 5.88, 33.13] raw_delta=[-2.155, 1.643, -0.105, -4.232, -0.042, -0.113] scaled_delta=[-1.077, 0.821, -0.053, -2.116, -0.021, -0.056] clamped_delta=[-1.077, 0.821, -0.053, -2.116, -0.021, -0.056] target=[-98.99, 4.42, 2.49, -101.78, 5.86, 33.07] gripper=80.0->model:81.2 command:81.2 qpos_source=forced qpos_stale_steps=1 qpos_age=-0.003 qpos_stale=ok
+  http sent=[] server_delta=None
+replanned action chunk at step=5
+step=5 mode=target current=[-98.08, 3.77, 2.54, -99.66, 5.88, 33.13] raw_delta=[-2.05, 0.393, -0.042, -2.937, -0.477, 0.329] scaled_delta=[-1.025, 0.196, -0.021, -1.469, -0.238, 0.165] clamped_delta=[-1.025, 0.196, -0.021, -1.469, -0.238, 0.165] target=[-99.1, 3.97, 2.52, -101.13, 5.64, 33.29] gripper=80.0->model:81.9 command:81.9 qpos_source=forced qpos_stale_steps=0 qpos_age=-0.002 qpos_stale=ok
+  http sent=[] server_delta=None
+step=6 mode=target current=[-98.08, 3.77, 2.54, -99.66, 5.88, 33.13] raw_delta=[-1.987, 0.453, -0.025, -3.02, -0.417, 0.357] scaled_delta=[-0.993, 0.226, -0.013, -1.51, -0.209, 0.179] clamped_delta=[-0.993, 0.226, -0.013, -1.51, -0.209, 0.179] target=[-99.07, 4.0, 2.53, -101.17, 5.67, 33.31] gripper=80.0->model:81.9 command:81.9 qpos_source=forced qpos_stale_steps=1 qpos_age=-0.001 qpos_stale=ok
+  http sent=[] server_delta=None
+step=7 mode=target current=[-98.08, 3.77, 2.54, -99.66, 5.88, 33.13] raw_delta=[-1.992, 0.5, -0.027, -3.062, -0.425, 0.367] scaled_delta=[-0.996, 0.25, -0.014, -1.531, -0.212, 0.183] clamped_delta=[-0.996, 0.25, -0.014, -1.531, -0.212, 0.183] target=[-99.08, 4.02, 2.53, -101.19, 5.67, 33.31] gripper=80.0->model:81.9 command:81.9 qpos_source=forced qpos_stale_steps=2 qpos_age=-0.002 qpos_stale=ok
+  http sent=[] server_delta=None
+step=8 mode=target current=[-98.08, 3.77, 2.54, -99.66, 5.88, 33.13] raw_delta=[-1.947, 0.389, -0.001, -2.955, -0.424, 0.381] scaled_delta=[-0.974, 0.195, -0.0, -1.477, -0.212, 0.191] clamped_delta=[-0.974, 0.195, -0.0, -1.477, -0.212, 0.191] target=[-99.05, 3.96, 2.54, -101.14, 5.67, 33.32] gripper=80.0->model:81.9 command:81.9 qpos_source=forced qpos_stale_steps=3 qpos_age=-0.005 qpos_stale=ok
+  http sent=[] server_delta=None
+step=9 mode=target current=[-98.08, 3.77, 2.54, -99.66, 5.88, 33.13] raw_delta=[-1.806, 0.47, 0.008, -2.983, -0.343, 0.37] scaled_delta=[-0.903, 0.235, 0.004, -1.492, -0.171, 0.185] clamped_delta=[-0.903, 0.235, 0.004, -1.492, -0.171, 0.185] target=[-98.98, 4.01, 2.54, -101.15, 5.71, 33.31] gripper=80.0->model:81.9 command:81.9 qpos_source=forced qpos_stale_steps=4 qpos_age=-0.002 qpos_stale=ok
+  http sent=[] server_delta=None
+replanned action chunk at step=10
+step=10 mode=target current=[-98.08, 3.77, 2.54, -99.66, 5.88, 33.13] raw_delta=[-1.597, 0.551, -0.094, -2.788, -0.401, 0.179] scaled_delta=[-0.798, 0.276, -0.047, -1.394, -0.2, 0.09] clamped_delta=[-0.798, 0.276, -0.047, -1.394, -0.2, 0.09] target=[-98.88, 4.05, 2.49, -101.05, 5.68, 33.22] gripper=80.0->model:81.7 command:81.7 qpos_source=forced qpos_stale_steps=5 qpos_age=-0.006 qpos_stale=ok
+  http sent=[] server_delta=None
+step=11 mode=target current=[-98.08, 3.77, 2.54, -99.66, 5.88, 33.13] raw_delta=[-1.518, 0.623, -0.07, -2.884, -0.339, 0.223] scaled_delta=[-0.759, 0.312, -0.035, -1.442, -0.17, 0.112] clamped_delta=[-0.759, 0.312, -0.035, -1.442, -0.17, 0.112] target=[-98.84, 4.08, 2.5, -101.1, 5.71, 33.24] gripper=80.0->model:81.7 command:81.7 qpos_source=forced qpos_stale_steps=6 qpos_age=-0.006 qpos_stale=ok
+  http sent=[] server_delta=None
+step=12 mode=target current=[-98.08, 3.77, 2.54, -99.66, 5.88, 33.13] raw_delta=[-1.537, 0.644, -0.076, -2.907, -0.351, 0.221] scaled_delta=[-0.769, 0.322, -0.038, -1.453, -0.175, 0.111] clamped_delta=[-0.769, 0.322, -0.038, -1.453, -0.175, 0.111] target=[-98.85, 4.09, 2.5, -101.11, 5.7, 33.24] gripper=80.0->model:81.7 command:81.7 qpos_source=forced qpos_stale_steps=7 qpos_age=-0.001 qpos_stale=ok
+  http sent=[] server_delta=None
+step=13 mode=target current=[-98.08, 3.77, 2.54, -99.66, 5.88, 33.13] raw_delta=[-1.47, 0.579, -0.05, -2.815, -0.339, 0.24] scaled_delta=[-0.735, 0.29, -0.025, -1.408, -0.17, 0.12] clamped_delta=[-0.735, 0.29, -0.025, -1.408, -0.17, 0.12] target=[-98.82, 4.06, 2.51, -101.07, 5.71, 33.25] gripper=80.0->model:81.8 command:81.8 qpos_source=forced qpos_stale_steps=8 qpos_age=-0.007 qpos_stale=ok
+  http sent=[] server_delta=None
+step=14 mode=target current=[-98.08, 3.77, 2.54, -99.66, 5.88, 33.13] raw_delta=[-1.335, 0.665, -0.031, -2.837, -0.266, 0.227] scaled_delta=[-0.668, 0.332, -0.016, -1.418, -0.133, 0.113] clamped_delta=[-0.668, 0.332, -0.016, -1.418, -0.133, 0.113] target=[-98.75, 4.1, 2.52, -101.08, 5.75, 33.24] gripper=80.0->model:81.8 command:81.8 qpos_source=forced qpos_stale_steps=9 qpos_age=-0.007 qpos_stale=ok
+  http sent=[] server_delta=None
+replanned action chunk at step=15
+step=15 mode=target current=[-98.08, 3.77, 2.54, -99.66, 5.88, 33.13] raw_delta=[-1.973, 0.445, 0.016, -2.715, -0.537, 0.291] scaled_delta=[-0.987, 0.222, 0.008, -1.357, -0.268, 0.145] clamped_delta=[-0.987, 0.222, 0.008, -1.357, -0.268, 0.145] target=[-99.07, 3.99, 2.55, -101.02, 5.61, 33.28] gripper=80.0->model:82.0 command:82.0 qpos_source=forced qpos_stale_steps=10 qpos_age=0.004 qpos_stale=ok
+  http sent=[] server_delta=None
+step=16 mode=target current=[-98.08, 3.77, 2.54, -99.66, 5.88, 33.13] raw_delta=[-1.912, 0.516, 0.035, -2.785, -0.482, 0.319] scaled_delta=[-0.956, 0.258, 0.018, -1.393, -0.241, 0.16] clamped_delta=[-0.956, 0.258, 0.018, -1.393, -0.241, 0.16] target=[-99.04, 4.03, 2.56, -101.05, 5.64, 33.29] gripper=80.0->model:82.0 command:82.0 qpos_source=forced qpos_stale_steps=11 qpos_age=-0.007 qpos_stale=ok
+  http sent=[] server_delta=None
+step=17 mode=target current=[-98.08, 3.77, 2.54, -99.66, 5.88, 33.13] raw_delta=[-1.92, 0.556, 0.029, -2.816, -0.49, 0.326] scaled_delta=[-0.96, 0.278, 0.015, -1.408, -0.245, 0.163] clamped_delta=[-0.96, 0.278, 0.015, -1.408, -0.245, 0.163] target=[-99.04, 4.05, 2.55, -101.07, 5.63, 33.29] gripper=80.0->model:82.1 command:82.1 qpos_source=forced qpos_stale_steps=12 qpos_age=-0.005 qpos_stale=ok
+  http sent=[] server_delta=None
+step=18 mode=target current=[-98.08, 3.77, 2.54, -99.66, 5.88, 33.13] raw_delta=[-1.836, 0.462, 0.062, -2.72, -0.483, 0.349] scaled_delta=[-0.918, 0.231, 0.031, -1.36, -0.241, 0.174] clamped_delta=[-0.918, 0.231, 0.031, -1.36, -0.241, 0.174] target=[-99.0, 4.0, 2.57, -101.02, 5.64, 33.3] gripper=80.0->model:82.1 command:82.1 qpos_source=forced qpos_stale_steps=13 qpos_age=-0.005 qpos_stale=ok
+  http sent=[] server_delta=None
+step=19 mode=target current=[-98.08, 3.77, 2.54, -99.66, 5.88, 33.13] raw_delta=[-1.702, 0.548, 0.078, -2.759, -0.403, 0.33] scaled_delta=[-0.851, 0.274, 0.039, -1.38, -0.201, 0.165] clamped_delta=[-0.851, 0.274, 0.039, -1.38, -0.201, 0.165] target=[-98.93, 4.04, 2.58, -101.04, 5.68, 33.29] gripper=80.0->model:82.1 command:82.1 qpos_source=forced qpos_stale_steps=14 qpos_age=-0.006 qpos_stale=ok
+  http sent=[] server_delta=None
+replanned action chunk at step=20
+step=20 mode=target current=[-98.08, 3.77, 2.54, -99.66, 5.88, 33.13] raw_delta=[-1.377, 0.566, -0.062, -2.889, -0.357, 0.266] scaled_delta=[-0.688, 0.283, -0.031, -1.445, -0.179, 0.133] clamped_delta=[-0.688, 0.283, -0.031, -1.445, -0.179, 0.133] target=[-98.77, 4.05, 2.51, -101.1, 5.7, 33.26] gripper=80.0->model:82.3 command:82.3 qpos_source=forced qpos_stale_steps=15 qpos_age=-0.003 qpos_stale=warn
+  http sent=[] server_delta=None
+step=21 mode=target current=[-98.08, 3.77, 2.54, -99.66, 5.88, 33.13] raw_delta=[-1.309, 0.635, -0.039, -2.994, -0.297, 0.303] scaled_delta=[-0.654, 0.317, -0.019, -1.497, -0.148, 0.151] clamped_delta=[-0.654, 0.317, -0.019, -1.497, -0.148, 0.151] target=[-98.73, 4.09, 2.52, -101.16, 5.73, 33.28] gripper=80.0->model:82.3 command:82.3 qpos_source=forced qpos_stale_steps=16 qpos_age=-0.003 qpos_stale=warn
+  http sent=[] server_delta=None
+step=22 mode=target current=[-98.08, 3.77, 2.54, -99.66, 5.88, 33.13] raw_delta=[-1.331, 0.654, -0.047, -3.017, -0.307, 0.301] scaled_delta=[-0.666, 0.327, -0.023, -1.509, -0.154, 0.151] clamped_delta=[-0.666, 0.327, -0.023, -1.509, -0.154, 0.151] target=[-98.75, 4.1, 2.52, -101.17, 5.73, 33.28] gripper=80.0->model:82.3 command:82.3 qpos_source=forced qpos_stale_steps=17 qpos_age=0.002 qpos_stale=warn
+  http sent=[] server_delta=None
+step=23 mode=target current=[-98.08, 3.77, 2.54, -99.66, 5.88, 33.13] raw_delta=[-1.264, 0.586, -0.017, -2.939, -0.298, 0.323] scaled_delta=[-0.632, 0.293, -0.009, -1.47, -0.149, 0.161] clamped_delta=[-0.632, 0.293, -0.009, -1.47, -0.149, 0.161] target=[-98.71, 4.06, 2.53, -101.13, 5.73, 33.29] gripper=80.0->model:82.3 command:82.3 qpos_source=forced qpos_stale_steps=18 qpos_age=-0.004 qpos_stale=warn
+  http sent=[] server_delta=None
+step=24 mode=target current=[-98.08, 3.77, 2.54, -99.66, 5.88, 33.13] raw_delta=[-1.144, 0.671, -0.004, -2.966, -0.219, 0.315] scaled_delta=[-0.572, 0.335, -0.002, -1.483, -0.11, 0.158] clamped_delta=[-0.572, 0.335, -0.002, -1.483, -0.11, 0.158] target=[-98.65, 4.11, 2.54, -101.14, 5.77, 33.29] gripper=80.0->model:82.3 command:82.3 qpos_source=forced qpos_stale_steps=19 qpos_age=-0.005 qpos_stale=warn
+  http sent=[] server_delta=None
+replanned action chunk at step=25
+step=25 mode=target current=[-98.08, 3.77, 2.54, -99.66, 5.88, 33.13] raw_delta=[-2.068, 0.581, 0.008, -2.752, -0.347, 0.196] scaled_delta=[-1.034, 0.29, 0.004, -1.376, -0.173, 0.098] clamped_delta=[-1.034, 0.29, 0.004, -1.376, -0.173, 0.098] target=[-99.11, 4.06, 2.54, -101.04, 5.71, 33.23] gripper=80.0->model:81.8 command:81.8 qpos_source=forced qpos_stale_steps=20 qpos_age=-0.004 qpos_stale=warn
+  http sent=[] server_delta=None
+step=26 mode=target current=[-98.08, 3.77, 2.54, -99.66, 5.88, 33.13] raw_delta=[-2.002, 0.658, 0.021, -2.853, -0.295, 0.244] scaled_delta=[-1.001, 0.329, 0.01, -1.426, -0.147, 0.122] clamped_delta=[-1.001, 0.329, 0.01, -1.426, -0.147, 0.122] target=[-99.08, 4.1, 2.55, -101.09, 5.73, 33.25] gripper=80.0->model:81.8 command:81.8 qpos_source=forced qpos_stale_steps=21 qpos_age=-0.004 qpos_stale=warn
+  http sent=[] server_delta=None
+step=27 mode=target current=[-98.08, 3.77, 2.54, -99.66, 5.88, 33.13] raw_delta=[-2.012, 0.674, 0.018, -2.878, -0.303, 0.241] scaled_delta=[-1.006, 0.337, 0.009, -1.439, -0.151, 0.12] clamped_delta=[-1.006, 0.337, 0.009, -1.439, -0.151, 0.12] target=[-99.09, 4.11, 2.55, -101.1, 5.73, 33.25] gripper=80.0->model:81.8 command:81.8 qpos_source=forced qpos_stale_steps=22 qpos_age=-0.003 qpos_stale=warn
+  http sent=[] server_delta=None
+step=28 mode=target current=[-98.08, 3.77, 2.54, -99.66, 5.88, 33.13] raw_delta=[-1.933, 0.611, 0.042, -2.778, -0.296, 0.272] scaled_delta=[-0.967, 0.305, 0.021, -1.389, -0.148, 0.136] clamped_delta=[-0.967, 0.305, 0.021, -1.389, -0.148, 0.136] target=[-99.05, 4.08, 2.56, -101.05, 5.73, 33.27] gripper=80.0->model:81.9 command:81.9 qpos_source=forced qpos_stale_steps=23 qpos_age=-0.004 qpos_stale=warn
+  http sent=[] server_delta=None
+step=29 mode=target current=[-98.08, 3.77, 2.54, -99.66, 5.88, 33.13] raw_delta=[-1.811, 0.685, 0.047, -2.804, -0.213, 0.253] scaled_delta=[-0.905, 0.342, 0.024, -1.402, -0.106, 0.126] clamped_delta=[-0.905, 0.342, 0.024, -1.402, -0.106, 0.126] target=[-98.99, 4.11, 2.56, -101.06, 5.77, 33.26] gripper=80.0->model:81.9 command:81.9 qpos_source=forced qpos_stale_steps=24 qpos_age=-0.004 qpos_stale=warn
+  http sent=[] server_delta=None
+replanned action chunk at step=30
+step=30 mode=target current=[-98.08, 3.77, 2.54, -99.66, 5.88, 33.13] raw_delta=[-1.92, 0.525, 0.049, -3.159, -0.619, 0.353] scaled_delta=[-0.96, 0.262, 0.024, -1.58, -0.31, 0.177] clamped_delta=[-0.96, 0.262, 0.024, -1.58, -0.31, 0.177] target=[-99.04, 4.03, 2.56, -101.24, 5.57, 33.31] gripper=80.0->model:82.0 command:82.0 qpos_source=forced qpos_stale_steps=25 qpos_age=-0.003 qpos_stale=warn
+  http sent=[] server_delta=None
+step=31 mode=target current=[-98.08, 3.77, 2.54, -99.66, 5.88, 33.13] raw_delta=[-1.85, 0.613, 0.064, -3.252, -0.564, 0.377] scaled_delta=[-0.925, 0.307, 0.032, -1.626, -0.282, 0.188] clamped_delta=[-0.925, 0.307, 0.032, -1.626, -0.282, 0.188] target=[-99.01, 4.08, 2.57, -101.29, 5.6, 33.32] gripper=80.0->model:82.0 command:82.0 qpos_source=forced qpos_stale_steps=26 qpos_age=-0.003 qpos_stale=warn
+  http sent=[] server_delta=None
+step=32 mode=target current=[-98.08, 3.77, 2.54, -99.66, 5.88, 33.13] raw_delta=[-1.857, 0.63, 0.059, -3.274, -0.572, 0.383] scaled_delta=[-0.929, 0.315, 0.029, -1.637, -0.286, 0.191] clamped_delta=[-0.929, 0.315, 0.029, -1.637, -0.286, 0.191] target=[-99.01, 4.09, 2.57, -101.3, 5.59, 33.32] gripper=80.0->model:82.0 command:82.0 qpos_source=forced qpos_stale_steps=27 qpos_age=-0.003 qpos_stale=warn
+  http sent=[] server_delta=None
+step=33 mode=target current=[-98.08, 3.77, 2.54, -99.66, 5.88, 33.13] raw_delta=[-1.792, 0.535, 0.086, -3.168, -0.564, 0.396] scaled_delta=[-0.896, 0.267, 0.043, -1.584, -0.282, 0.198] clamped_delta=[-0.896, 0.267, 0.043, -1.584, -0.282, 0.198] target=[-98.98, 4.04, 2.58, -101.24, 5.6, 33.33] gripper=80.0->model:82.1 command:82.1 qpos_source=forced qpos_stale_steps=28 qpos_age=-0.005 qpos_stale=warn
+  http sent=[] server_delta=None
+step=34 mode=target current=[-98.08, 3.77, 2.54, -99.66, 5.88, 33.13] raw_delta=[-1.663, 0.621, 0.107, -3.213, -0.481, 0.4] scaled_delta=[-0.832, 0.311, 0.053, -1.606, -0.24, 0.2] clamped_delta=[-0.832, 0.311, 0.053, -1.606, -0.24, 0.2] target=[-98.91, 4.08, 2.59, -101.27, 5.64, 33.33] gripper=80.0->model:82.1 command:82.1 qpos_source=forced qpos_stale_steps=29 qpos_age=-0.005 qpos_stale=warn
+  http sent=[] server_delta=None
+replanned action chunk at step=35
+step=35 mode=target current=[-98.08, 3.77, 2.54, -99.66, 5.88, 33.13] raw_delta=[-1.647, 0.699, -0.013, -2.915, -0.5, 0.341] scaled_delta=[-0.823, 0.35, -0.006, -1.458, -0.25, 0.17] clamped_delta=[-0.823, 0.35, -0.006, -1.458, -0.25, 0.17] target=[-98.9, 4.12, 2.53, -101.12, 5.63, 33.3] gripper=80.0->model:82.1 command:82.1 qpos_source=forced qpos_stale_steps=30 qpos_age=-0.005 qpos_stale=warn
+  http sent=[] server_delta=None
+step=36 mode=target current=[-98.08, 3.77, 2.54, -99.66, 5.88, 33.13] raw_delta=[-1.589, 0.781, 0.001, -2.987, -0.438, 0.383] scaled_delta=[-0.794, 0.391, 0.001, -1.494, -0.219, 0.192] clamped_delta=[-0.794, 0.391, 0.001, -1.494, -0.219, 0.192] target=[-98.87, 4.16, 2.54, -101.15, 5.66, 33.32] gripper=80.0->model:82.1 command:82.1 qpos_source=forced qpos_stale_steps=31 qpos_age=-0.002 qpos_stale=warn
+  http sent=[] server_delta=None
+step=37 mode=target current=[-98.08, 3.77, 2.54, -99.66, 5.88, 33.13] raw_delta=[-1.604, 0.803, 0.001, -3.038, -0.449, 0.38] scaled_delta=[-0.802, 0.401, 0.0, -1.519, -0.225, 0.19] clamped_delta=[-0.802, 0.401, 0.0, -1.519, -0.225, 0.19] target=[-98.88, 4.17, 2.54, -101.18, 5.66, 33.32] gripper=80.0->model:82.1 command:82.1 qpos_source=forced qpos_stale_steps=32 qpos_age=-0.002 qpos_stale=warn
+  http sent=[] server_delta=None
+step=38 mode=target current=[-98.08, 3.77, 2.54, -99.66, 5.88, 33.13] raw_delta=[-1.524, 0.724, 0.023, -2.934, -0.439, 0.407] scaled_delta=[-0.762, 0.362, 0.011, -1.467, -0.22, 0.204] clamped_delta=[-0.762, 0.362, 0.011, -1.467, -0.22, 0.204] target=[-98.84, 4.13, 2.55, -101.13, 5.66, 33.33] gripper=80.0->model:82.2 command:82.2 qpos_source=forced qpos_stale_steps=33 qpos_age=-0.006 qpos_stale=warn
+  http sent=[] server_delta=None
+step=39 mode=target current=[-98.08, 3.77, 2.54, -99.66, 5.88, 33.13] raw_delta=[-1.422, 0.807, 0.033, -2.973, -0.365, 0.39] scaled_delta=[-0.711, 0.403, 0.016, -1.486, -0.182, 0.195] clamped_delta=[-0.711, 0.403, 0.016, -1.486, -0.182, 0.195] target=[-98.79, 4.17, 2.56, -101.15, 5.7, 33.33] gripper=80.0->model:82.2 command:82.2 qpos_source=forced qpos_stale_steps=34 qpos_age=-0.005 qpos_stale=warn
+  http sent=[] server_delta=None
+replanned action chunk at step=40
+step=40 mode=target current=[-98.08, 3.77, 2.54, -99.66, 5.88, 33.13] raw_delta=[-1.517, 0.726, -0.047, -2.668, -0.42, 0.278] scaled_delta=[-0.759, 0.363, -0.024, -1.334, -0.21, 0.139] clamped_delta=[-0.759, 0.363, -0.024, -1.334, -0.21, 0.139] target=[-98.84, 4.13, 2.52, -100.99, 5.67, 33.27] gripper=80.0->model:81.7 command:81.7 qpos_source=forced qpos_stale_steps=35 qpos_age=-0.004 qpos_stale=warn
+  http sent=[] server_delta=None
+step=41 mode=target current=[-98.08, 3.77, 2.54, -99.66, 5.88, 33.13] raw_delta=[-1.456, 0.808, -0.031, -2.767, -0.364, 0.317] scaled_delta=[-0.728, 0.404, -0.015, -1.383, -0.182, 0.158] clamped_delta=[-0.728, 0.404, -0.015, -1.383, -0.182, 0.158] target=[-98.81, 4.17, 2.52, -101.04, 5.7, 33.29] gripper=80.0->model:81.7 command:81.7 qpos_source=forced qpos_stale_steps=36 qpos_age=-0.004 qpos_stale=warn
+  http sent=[] server_delta=None
+step=42 mode=target current=[-98.08, 3.77, 2.54, -99.66, 5.88, 33.13] raw_delta=[-1.465, 0.833, -0.037, -2.807, -0.374, 0.317] scaled_delta=[-0.732, 0.416, -0.018, -1.404, -0.187, 0.158] clamped_delta=[-0.732, 0.416, -0.018, -1.404, -0.187, 0.158] target=[-98.81, 4.19, 2.52, -101.06, 5.69, 33.29] gripper=80.0->model:81.7 command:81.7 qpos_source=forced qpos_stale_steps=37 qpos_age=-0.004 qpos_stale=warn
+  http sent=[] server_delta=None
+step=43 mode=target current=[-98.08, 3.77, 2.54, -99.66, 5.88, 33.13] raw_delta=[-1.419, 0.76, -0.009, -2.703, -0.367, 0.346] scaled_delta=[-0.71, 0.38, -0.005, -1.351, -0.183, 0.173] clamped_delta=[-0.71, 0.38, -0.005, -1.351, -0.183, 0.173] target=[-98.79, 4.15, 2.54, -101.01, 5.7, 33.3] gripper=80.0->model:81.7 command:81.7 qpos_source=forced qpos_stale_steps=38 qpos_age=-0.009 qpos_stale=warn
+  http sent=[] server_delta=None
+step=44 mode=target current=[-98.08, 3.77, 2.54, -99.66, 5.88, 33.13] raw_delta=[-1.305, 0.853, 0.005, -2.743, -0.288, 0.333] scaled_delta=[-0.652, 0.426, 0.003, -1.371, -0.144, 0.167] clamped_delta=[-0.652, 0.426, 0.003, -1.371, -0.144, 0.167] target=[-98.73, 4.2, 2.54, -101.03, 5.74, 33.3] gripper=80.0->model:81.7 command:81.7 qpos_source=forced qpos_stale_steps=39 qpos_age=-0.005 qpos_stale=warn
+  http sent=[] server_delta=None
+replanned action chunk at step=45
+step=45 mode=target current=[-98.08, 3.77, 2.54, -99.66, 5.88, 33.13] raw_delta=[-1.733, 0.254, -0.019, -2.735, -0.474, 0.31] scaled_delta=[-0.866, 0.127, -0.009, -1.368, -0.237, 0.155] clamped_delta=[-0.866, 0.127, -0.009, -1.368, -0.237, 0.155] target=[-98.95, 3.9, 2.53, -101.03, 5.64, 33.29] gripper=80.0->model:82.2 command:82.2 qpos_source=forced qpos_stale_steps=40 qpos_age=-0.005 qpos_stale=warn
+  http sent=[] server_delta=None
+step=46 mode=target current=[-98.08, 3.77, 2.54, -99.66, 5.88, 33.13] raw_delta=[-1.67, 0.321, 0.006, -2.817, -0.412, 0.338] scaled_delta=[-0.835, 0.161, 0.003, -1.408, -0.206, 0.169] clamped_delta=[-0.835, 0.161, 0.003, -1.408, -0.206, 0.169] target=[-98.91, 3.93, 2.54, -101.07, 5.67, 33.3] gripper=80.0->model:82.2 command:82.2 qpos_source=forced qpos_stale_steps=41 qpos_age=0.002 qpos_stale=warn
+  http sent=[] server_delta=None
+step=47 mode=target current=[-98.08, 3.77, 2.54, -99.66, 5.88, 33.13] raw_delta=[-1.687, 0.345, -0.001, -2.855, -0.422, 0.344] scaled_delta=[-0.844, 0.172, -0.0, -1.428, -0.211, 0.172] clamped_delta=[-0.844, 0.172, -0.0, -1.428, -0.211, 0.172] target=[-98.92, 3.94, 2.54, -101.09, 5.67, 33.3] gripper=80.0->model:82.2 command:82.2 qpos_source=forced qpos_stale_steps=42 qpos_age=-0.003 qpos_stale=warn
+  http sent=[] server_delta=None
+step=48 mode=target current=[-98.08, 3.77, 2.54, -99.66, 5.88, 33.13] raw_delta=[-1.615, 0.271, 0.028, -2.753, -0.41, 0.367] scaled_delta=[-0.808, 0.136, 0.014, -1.377, -0.205, 0.184] clamped_delta=[-0.808, 0.136, 0.014, -1.377, -0.205, 0.184] target=[-98.89, 3.91, 2.55, -101.04, 5.68, 33.31] gripper=80.0->model:82.2 command:82.2 qpos_source=forced qpos_stale_steps=43 qpos_age=-0.004 qpos_stale=warn
+  http sent=[] server_delta=None
+step=49 mode=target current=[-98.08, 3.77, 2.54, -99.66, 5.88, 33.13] raw_delta=[-1.476, 0.356, 0.049, -2.8, -0.334, 0.36] scaled_delta=[-0.738, 0.178, 0.025, -1.4, -0.167, 0.18] clamped_delta=[-0.738, 0.178, 0.025, -1.4, -0.167, 0.18] target=[-98.82, 3.95, 2.56, -101.06, 5.71, 33.31] gripper=80.0->model:82.2 command:82.2 qpos_source=forced qpos_stale_steps=44 qpos_age=-0.002 qpos_stale=warn
+  http sent=[] server_delta=None
+replanned action chunk at step=50
+step=50 mode=target current=[-98.08, 3.77, 2.54, -99.66, 5.88, 33.13] raw_delta=[-1.548, 0.912, 0.034, -3.133, -0.491, 0.354] scaled_delta=[-0.774, 0.456, 0.017, -1.566, -0.246, 0.177] clamped_delta=[-0.774, 0.456, 0.017, -1.566, -0.246, 0.177] target=[-98.85, 4.23, 2.56, -101.23, 5.63, 33.31] gripper=80.0->model:82.2 command:82.2 qpos_source=forced qpos_stale_steps=45 qpos_age=-0.003 qpos_stale=warn
+  http sent=[] server_delta=None
+step=51 mode=target current=[-98.08, 3.77, 2.54, -99.66, 5.88, 33.13] raw_delta=[-1.488, 1.013, 0.046, -3.221, -0.437, 0.372] scaled_delta=[-0.744, 0.507, 0.023, -1.61, -0.219, 0.186] clamped_delta=[-0.744, 0.507, 0.023, -1.61, -0.219, 0.186] target=[-98.82, 4.28, 2.56, -101.27, 5.66, 33.32] gripper=80.0->model:82.2 command:82.2 qpos_source=forced qpos_stale_steps=46 qpos_age=-0.003 qpos_stale=warn
+  http sent=[] server_delta=None
+step=52 mode=target current=[-98.08, 3.77, 2.54, -99.66, 5.88, 33.13] raw_delta=[-1.499, 1.038, 0.046, -3.25, -0.442, 0.383] scaled_delta=[-0.75, 0.519, 0.023, -1.625, -0.221, 0.192] clamped_delta=[-0.75, 0.519, 0.023, -1.625, -0.221, 0.192] target=[-98.83, 4.29, 2.56, -101.28, 5.66, 33.32] gripper=80.0->model:82.2 command:82.2 qpos_source=forced qpos_stale_steps=47 qpos_age=-0.005 qpos_stale=warn
+  http sent=[] server_delta=None
+step=53 mode=target current=[-98.08, 3.77, 2.54, -99.66, 5.88, 33.13] raw_delta=[-1.432, 0.98, 0.066, -3.146, -0.435, 0.384] scaled_delta=[-0.716, 0.49, 0.033, -1.573, -0.217, 0.192] clamped_delta=[-0.716, 0.49, 0.033, -1.573, -0.217, 0.192] target=[-98.8, 4.26, 2.57, -101.23, 5.66, 33.32] gripper=80.0->model:82.3 command:82.3 qpos_source=forced qpos_stale_steps=48 qpos_age=-0.005 qpos_stale=warn
+  http sent=[] server_delta=None
+step=54 mode=target current=[-98.08, 3.77, 2.54, -99.66, 5.88, 33.13] raw_delta=[-1.319, 1.046, 0.086, -3.192, -0.353, 0.381] scaled_delta=[-0.659, 0.523, 0.043, -1.596, -0.176, 0.19] clamped_delta=[-0.659, 0.523, 0.043, -1.596, -0.176, 0.19] target=[-98.74, 4.29, 2.58, -101.26, 5.7, 33.32] gripper=80.0->model:82.3 command:82.3 qpos_source=forced qpos_stale_steps=49 qpos_age=-0.006 qpos_stale=warn
+  http sent=[] server_delta=None
+replanned action chunk at step=55
+step=55 mode=target current=[-98.08, 3.77, 2.54, -99.66, 5.88, 33.13] raw_delta=[-1.677, 0.724, 0.121, -3.186, -0.408, 0.349] scaled_delta=[-0.838, 0.362, 0.06, -1.593, -0.204, 0.175] clamped_delta=[-0.838, 0.362, 0.06, -1.593, -0.204, 0.175] target=[-98.92, 4.13, 2.6, -101.25, 5.68, 33.3] gripper=80.0->model:81.8 command:81.8 qpos_source=forced qpos_stale_steps=50 qpos_age=-0.004 qpos_stale=warn
+  http sent=[] server_delta=None
+step=56 mode=target current=[-98.08, 3.77, 2.54, -99.66, 5.88, 33.13] raw_delta=[-1.611, 0.795, 0.131, -3.261, -0.347, 0.382] scaled_delta=[-0.806, 0.398, 0.065, -1.631, -0.173, 0.191] clamped_delta=[-0.806, 0.398, 0.065, -1.631, -0.173, 0.191] target=[-98.89, 4.17, 2.61, -101.29, 5.71, 33.32] gripper=80.0->model:81.9 command:81.9 qpos_source=forced qpos_stale_steps=51 qpos_age=-0.003 qpos_stale=warn
+  http sent=[] server_delta=None
+step=57 mode=target current=[-98.08, 3.77, 2.54, -99.66, 5.88, 33.13] raw_delta=[-1.632, 0.821, 0.128, -3.279, -0.356, 0.381] scaled_delta=[-0.816, 0.41, 0.064, -1.639, -0.178, 0.19] clamped_delta=[-0.816, 0.41, 0.064, -1.639, -0.178, 0.19] target=[-98.9, 4.18, 2.6, -101.3, 5.7, 33.32] gripper=80.0->model:81.9 command:81.9 qpos_source=forced qpos_stale_steps=52 qpos_age=-0.005 qpos_stale=warn
+  http sent=[] server_delta=None
+step=58 mode=target current=[-98.08, 3.77, 2.54, -99.66, 5.88, 33.13] raw_delta=[-1.553, 0.733, 0.15, -3.185, -0.353, 0.413] scaled_delta=[-0.777, 0.366, 0.075, -1.593, -0.176, 0.206] clamped_delta=[-0.777, 0.366, 0.075, -1.593, -0.176, 0.206] target=[-98.86, 4.14, 2.62, -101.25, 5.7, 33.34] gripper=80.0->model:81.9 command:81.9 qpos_source=forced qpos_stale_steps=53 qpos_age=-0.005 qpos_stale=warn
+  http sent=[] server_delta=None
+step=59 mode=target current=[-98.08, 3.77, 2.54, -99.66, 5.88, 33.13] raw_delta=[-1.428, 0.821, 0.166, -3.231, -0.27, 0.408] scaled_delta=[-0.714, 0.41, 0.083, -1.616, -0.135, 0.204] clamped_delta=[-0.714, 0.41, 0.083, -1.616, -0.135, 0.204] target=[-98.79, 4.18, 2.62, -101.28, 5.74, 33.33] gripper=80.0->model:81.9 command:81.9 qpos_source=forced qpos_stale_steps=54 qpos_age=0.0 qpos_stale=warn
+  http sent=[] server_delta=None
+replanned action chunk at step=60
+step=60 mode=target current=[-98.08, 3.77, 2.54, -99.66, 5.88, 33.13] raw_delta=[-1.716, 0.813, 0.019, -3.037, -0.449, 0.395] scaled_delta=[-0.858, 0.406, 0.009, -1.518, -0.224, 0.198] clamped_delta=[-0.858, 0.406, 0.009, -1.518, -0.224, 0.198] target=[-98.94, 4.18, 2.55, -101.18, 5.66, 33.33] gripper=80.0->model:82.1 command:82.1 qpos_source=forced qpos_stale_steps=55 qpos_age=-0.004 qpos_stale=warn
+  http sent=[] server_delta=None
+step=61 mode=target current=[-98.08, 3.77, 2.54, -99.66, 5.88, 33.13] raw_delta=[-1.644, 0.89, 0.035, -3.137, -0.391, 0.423] scaled_delta=[-0.822, 0.445, 0.017, -1.568, -0.195, 0.211] clamped_delta=[-0.822, 0.445, 0.017, -1.568, -0.195, 0.211] target=[-98.9, 4.22, 2.56, -101.23, 5.68, 33.34] gripper=80.0->model:82.1 command:82.1 qpos_source=forced qpos_stale_steps=56 qpos_age=-0.002 qpos_stale=warn
+  http sent=[] server_delta=None
+step=62 mode=target current=[-98.08, 3.77, 2.54, -99.66, 5.88, 33.13] raw_delta=[-1.657, 0.911, 0.033, -3.157, -0.397, 0.432] scaled_delta=[-0.828, 0.456, 0.016, -1.578, -0.198, 0.216] clamped_delta=[-0.828, 0.456, 0.016, -1.578, -0.198, 0.216] target=[-98.91, 4.23, 2.56, -101.24, 5.68, 33.35] gripper=80.0->model:82.1 command:82.1 qpos_source=forced qpos_stale_steps=57 qpos_age=-0.008 qpos_stale=warn
+  http sent=[] server_delta=None
+step=63 mode=target current=[-98.08, 3.77, 2.54, -99.66, 5.88, 33.13] raw_delta=[-1.578, 0.832, 0.056, -3.057, -0.386, 0.441] scaled_delta=[-0.789, 0.416, 0.028, -1.529, -0.193, 0.221] clamped_delta=[-0.789, 0.416, 0.028, -1.529, -0.193, 0.221] target=[-98.87, 4.19, 2.57, -101.19, 5.69, 33.35] gripper=80.0->model:82.1 command:82.1 qpos_source=forced qpos_stale_steps=58 qpos_age=0.004 qpos_stale=warn
+  http sent=[] server_delta=None
+step=64 mode=target current=[-98.08, 3.77, 2.54, -99.66, 5.88, 33.13] raw_delta=[-1.448, 0.907, 0.073, -3.09, -0.309, 0.434] scaled_delta=[-0.724, 0.453, 0.037, -1.545, -0.154, 0.217] clamped_delta=[-0.724, 0.453, 0.037, -1.545, -0.154, 0.217] target=[-98.8, 4.22, 2.58, -101.21, 5.73, 33.35] gripper=80.0->model:82.1 command:82.1 qpos_source=forced qpos_stale_steps=59 qpos_age=-0.007 qpos_stale=warn
+  http sent=[] server_delta=None
+replanned action chunk at step=65
+step=65 mode=target current=[-98.08, 3.77, 2.54, -99.66, 5.88, 33.13] raw_delta=[-1.85, 0.641, 0.051, -3.482, -0.542, 0.344] scaled_delta=[-0.925, 0.321, 0.026, -1.741, -0.271, 0.172] clamped_delta=[-0.925, 0.321, 0.026, -1.741, -0.271, 0.172] target=[-99.01, 4.09, 2.57, -101.4, 5.61, 33.3] gripper=80.0->model:82.2 command:82.2 qpos_source=forced qpos_stale_steps=60 qpos_age=-0.0 qpos_stale=warn
+  http sent=[] server_delta=None
+step=66 mode=target current=[-98.08, 3.77, 2.54, -99.66, 5.88, 33.13] raw_delta=[-1.794, 0.73, 0.066, -3.558, -0.483, 0.367] scaled_delta=[-0.897, 0.365, 0.033, -1.779, -0.242, 0.183] clamped_delta=[-0.897, 0.365, 0.033, -1.779, -0.242, 0.183] target=[-98.98, 4.13, 2.57, -101.44, 5.64, 33.31] gripper=80.0->model:82.2 command:82.2 qpos_source=forced qpos_stale_steps=61 qpos_age=-0.001 qpos_stale=warn
+  http sent=[] server_delta=None
+step=67 mode=target current=[-98.08, 3.77, 2.54, -99.66, 5.88, 33.13] raw_delta=[-1.81, 0.755, 0.066, -3.58, -0.488, 0.373] scaled_delta=[-0.905, 0.378, 0.033, -1.79, -0.244, 0.186] clamped_delta=[-0.905, 0.378, 0.033, -1.79, -0.244, 0.186] target=[-98.99, 4.15, 2.57, -101.45, 5.64, 33.32] gripper=80.0->model:82.2 command:82.2 qpos_source=forced qpos_stale_steps=62 qpos_age=-0.003 qpos_stale=warn
+  http sent=[] server_delta=None
+step=68 mode=target current=[-98.08, 3.77, 2.54, -99.66, 5.88, 33.13] raw_delta=[-1.733, 0.671, 0.08, -3.484, -0.483, 0.375] scaled_delta=[-0.867, 0.335, 0.04, -1.742, -0.242, 0.187] clamped_delta=[-0.867, 0.335, 0.04, -1.742, -0.242, 0.187] target=[-98.95, 4.11, 2.58, -101.4, 5.64, 33.32] gripper=80.0->model:82.3 command:82.3 qpos_source=forced qpos_stale_steps=63 qpos_age=-0.004 qpos_stale=warn
+  http sent=[] server_delta=None
+step=69 mode=target current=[-98.08, 3.77, 2.54, -99.66, 5.88, 33.13] raw_delta=[-1.621, 0.749, 0.105, -3.541, -0.4, 0.372] scaled_delta=[-0.81, 0.375, 0.053, -1.77, -0.2, 0.186] clamped_delta=[-0.81, 0.375, 0.053, -1.77, -0.2, 0.186] target=[-98.89, 4.14, 2.59, -101.43, 5.68, 33.32] gripper=80.0->model:82.3 command:82.3 qpos_source=forced qpos_stale_steps=64 qpos_age=-0.006 qpos_stale=warn
+  http sent=[] server_delta=None
+replanned action chunk at step=70
+step=70 mode=target current=[-98.08, 3.77, 2.54, -99.66, 5.88, 33.13] raw_delta=[-1.422, 0.456, 0.005, -2.261, -0.303, 0.38] scaled_delta=[-0.711, 0.228, 0.003, -1.131, -0.151, 0.19] clamped_delta=[-0.711, 0.228, 0.003, -1.131, -0.151, 0.19] target=[-98.79, 4.0, 2.54, -100.79, 5.73, 33.32] gripper=80.0->model:82.0 command:82.0 qpos_source=forced qpos_stale_steps=65 qpos_age=-0.006 qpos_stale=warn
+  http sent=[] server_delta=None
+step=71 mode=target current=[-98.08, 3.77, 2.54, -99.66, 5.88, 33.13] raw_delta=[-1.342, 0.523, 0.024, -2.346, -0.244, 0.405] scaled_delta=[-0.671, 0.261, 0.012, -1.173, -0.122, 0.203] clamped_delta=[-0.671, 0.261, 0.012, -1.173, -0.122, 0.203] target=[-98.75, 4.03, 2.55, -100.83, 5.76, 33.33] gripper=80.0->model:82.0 command:82.0 qpos_source=forced qpos_stale_steps=66 qpos_age=-0.005 qpos_stale=warn
+  http sent=[] server_delta=None
+step=72 mode=target current=[-98.08, 3.77, 2.54, -99.66, 5.88, 33.13] raw_delta=[-1.379, 0.531, 0.02, -2.38, -0.253, 0.407] scaled_delta=[-0.69, 0.266, 0.01, -1.19, -0.127, 0.204] clamped_delta=[-0.69, 0.266, 0.01, -1.19, -0.127, 0.204] target=[-98.77, 4.04, 2.55, -100.85, 5.75, 33.33] gripper=80.0->model:82.0 command:82.0 qpos_source=forced qpos_stale_steps=67 qpos_age=-0.006 qpos_stale=warn
+  http sent=[] server_delta=None
+step=73 mode=target current=[-98.08, 3.77, 2.54, -99.66, 5.88, 33.13] raw_delta=[-1.275, 0.459, 0.057, -2.312, -0.237, 0.438] scaled_delta=[-0.638, 0.23, 0.028, -1.156, -0.119, 0.219] clamped_delta=[-0.638, 0.23, 0.028, -1.156, -0.119, 0.219] target=[-98.72, 4.0, 2.57, -100.82, 5.76, 33.35] gripper=80.0->model:82.0 command:82.0 qpos_source=forced qpos_stale_steps=68 qpos_age=-0.006 qpos_stale=warn
+  http sent=[] server_delta=None
+step=74 mode=target current=[-98.08, 3.77, 2.54, -99.66, 5.88, 33.13] raw_delta=[-1.149, 0.535, 0.067, -2.324, -0.163, 0.427] scaled_delta=[-0.574, 0.268, 0.033, -1.162, -0.082, 0.214] clamped_delta=[-0.574, 0.268, 0.033, -1.162, -0.082, 0.214] target=[-98.65, 4.04, 2.57, -100.82, 5.8, 33.34] gripper=80.0->model:82.0 command:82.0 qpos_source=forced qpos_stale_steps=69 qpos_age=-0.005 qpos_stale=warn
+  http sent=[] server_delta=None
+replanned action chunk at step=75
+step=75 mode=target current=[-98.08, 3.77, 2.54, -99.66, 5.88, 33.13] raw_delta=[-1.815, 0.213, 0.043, -2.775, -0.445, 0.376] scaled_delta=[-0.907, 0.107, 0.022, -1.388, -0.222, 0.188] clamped_delta=[-0.907, 0.107, 0.022, -1.388, -0.222, 0.188] target=[-98.99, 3.88, 2.56, -101.05, 5.66, 33.32] gripper=80.0->model:81.9 command:81.9 qpos_source=forced qpos_stale_steps=70 qpos_age=-0.006 qpos_stale=warn
+  http sent=[] server_delta=None
+step=76 mode=target current=[-98.08, 3.77, 2.54, -99.66, 5.88, 33.13] raw_delta=[-1.728, 0.312, 0.058, -2.867, -0.385, 0.414] scaled_delta=[-0.864, 0.156, 0.029, -1.433, -0.193, 0.207] clamped_delta=[-0.864, 0.156, 0.029, -1.433, -0.193, 0.207] target=[-98.94, 3.93, 2.57, -101.09, 5.69, 33.34] gripper=80.0->model:81.9 command:81.9 qpos_source=forced qpos_stale_steps=71 qpos_age=-0.0 qpos_stale=warn
+  http sent=[] server_delta=None
+step=77 mode=target current=[-98.08, 3.77, 2.54, -99.66, 5.88, 33.13] raw_delta=[-1.74, 0.331, 0.055, -2.896, -0.396, 0.412] scaled_delta=[-0.87, 0.165, 0.028, -1.448, -0.198, 0.206] clamped_delta=[-0.87, 0.165, 0.028, -1.448, -0.198, 0.206] target=[-98.95, 3.94, 2.57, -101.11, 5.68, 33.34] gripper=80.0->model:82.0 command:82.0 qpos_source=forced qpos_stale_steps=72 qpos_age=-0.001 qpos_stale=warn
+  http sent=[] server_delta=None
+step=78 mode=target current=[-98.08, 3.77, 2.54, -99.66, 5.88, 33.13] raw_delta=[-1.675, 0.254, 0.08, -2.801, -0.384, 0.445] scaled_delta=[-0.838, 0.127, 0.04, -1.4, -0.192, 0.223] clamped_delta=[-0.838, 0.127, 0.04, -1.4, -0.192, 0.223] target=[-98.92, 3.9, 2.58, -101.06, 5.69, 33.35] gripper=80.0->model:82.0 command:82.0 qpos_source=forced qpos_stale_steps=73 qpos_age=-0.002 qpos_stale=warn
+  http sent=[] server_delta=None
+step=79 mode=target current=[-98.08, 3.77, 2.54, -99.66, 5.88, 33.13] raw_delta=[-1.559, 0.328, 0.09, -2.856, -0.304, 0.423] scaled_delta=[-0.779, 0.164, 0.045, -1.428, -0.152, 0.212] clamped_delta=[-0.779, 0.164, 0.045, -1.428, -0.152, 0.212] target=[-98.86, 3.93, 2.58, -101.09, 5.73, 33.34] gripper=80.0->model:82.0 command:82.0 qpos_source=forced qpos_stale_steps=74 qpos_age=-0.0 qpos_stale=warn
+  http sent=[] server_delta=None
+replanned action chunk at step=80
+step=80 mode=target current=[-98.08, 3.77, 2.54, -99.66, 5.88, 33.13] raw_delta=[-1.917, 0.379, 0.01, -2.508, -0.405, 0.361] scaled_delta=[-0.958, 0.189, 0.005, -1.254, -0.203, 0.181] clamped_delta=[-0.958, 0.189, 0.005, -1.254, -0.203, 0.181] target=[-99.04, 3.96, 2.54, -100.91, 5.68, 33.31] gripper=80.0->model:82.1 command:82.1 qpos_source=forced qpos_stale_steps=75 qpos_age=-0.003 qpos_stale=warn
+  http sent=[] server_delta=None
+step=81 mode=target current=[-98.08, 3.77, 2.54, -99.66, 5.88, 33.13] raw_delta=[-1.846, 0.458, 0.031, -2.606, -0.344, 0.399] scaled_delta=[-0.923, 0.229, 0.016, -1.303, -0.172, 0.199] clamped_delta=[-0.923, 0.229, 0.016, -1.303, -0.172, 0.199] target=[-99.0, 4.0, 2.56, -100.96, 5.71, 33.33] gripper=80.0->model:82.1 command:82.1 qpos_source=forced qpos_stale_steps=76 qpos_age=-0.006 qpos_stale=warn
+  http sent=[] server_delta=None
+step=82 mode=target current=[-98.08, 3.77, 2.54, -99.66, 5.88, 33.13] raw_delta=[-1.865, 0.481, 0.025, -2.638, -0.353, 0.393] scaled_delta=[-0.933, 0.241, 0.012, -1.319, -0.177, 0.196] clamped_delta=[-0.933, 0.241, 0.012, -1.319, -0.177, 0.196] target=[-99.01, 4.01, 2.55, -100.98, 5.7, 33.33] gripper=80.0->model:82.1 command:82.1 qpos_source=forced qpos_stale_steps=77 qpos_age=-0.006 qpos_stale=warn
+  http sent=[] server_delta=None
+step=83 mode=target current=[-98.08, 3.77, 2.54, -99.66, 5.88, 33.13] raw_delta=[-1.787, 0.414, 0.048, -2.548, -0.343, 0.42] scaled_delta=[-0.893, 0.207, 0.024, -1.274, -0.172, 0.21] clamped_delta=[-0.893, 0.207, 0.024, -1.274, -0.172, 0.21] target=[-98.97, 3.98, 2.56, -100.93, 5.71, 33.34] gripper=80.0->model:82.2 command:82.2 qpos_source=forced qpos_stale_steps=78 qpos_age=-0.004 qpos_stale=warn
+  http sent=[] server_delta=None
+step=84 mode=target current=[-98.08, 3.77, 2.54, -99.66, 5.88, 33.13] raw_delta=[-1.66, 0.484, 0.065, -2.6, -0.263, 0.401] scaled_delta=[-0.83, 0.242, 0.033, -1.3, -0.132, 0.201] clamped_delta=[-0.83, 0.242, 0.033, -1.3, -0.132, 0.201] target=[-98.91, 4.01, 2.57, -100.96, 5.75, 33.33] gripper=80.0->model:82.2 command:82.2 qpos_source=forced qpos_stale_steps=79 qpos_age=-0.006 qpos_stale=warn
+  http sent=[] server_delta=None
+replanned action chunk at step=85
+step=85 mode=target current=[-98.08, 3.77, 2.54, -99.66, 5.88, 33.13] raw_delta=[-1.715, 0.684, 0.046, -3.106, -0.436, 0.361] scaled_delta=[-0.857, 0.342, 0.023, -1.553, -0.218, 0.181] clamped_delta=[-0.857, 0.342, 0.023, -1.553, -0.218, 0.181] target=[-98.94, 4.11, 2.56, -101.21, 5.66, 33.31] gripper=80.0->model:82.0 command:82.0 qpos_source=forced qpos_stale_steps=80 qpos_age=-0.005 qpos_stale=warn
+  http sent=[] server_delta=None
+step=86 mode=target current=[-98.08, 3.77, 2.54, -99.66, 5.88, 33.13] raw_delta=[-1.63, 0.746, 0.055, -3.194, -0.383, 0.402] scaled_delta=[-0.815, 0.373, 0.027, -1.597, -0.192, 0.201] clamped_delta=[-0.815, 0.373, 0.027, -1.597, -0.192, 0.201] target=[-98.89, 4.14, 2.57, -101.26, 5.69, 33.33] gripper=80.0->model:82.0 command:82.0 qpos_source=forced qpos_stale_steps=81 qpos_age=-0.007 qpos_stale=warn
+  http sent=[] server_delta=None
+step=87 mode=target current=[-98.08, 3.77, 2.54, -99.66, 5.88, 33.13] raw_delta=[-1.652, 0.771, 0.05, -3.22, -0.387, 0.401] scaled_delta=[-0.826, 0.386, 0.025, -1.61, -0.193, 0.2] clamped_delta=[-0.826, 0.386, 0.025, -1.61, -0.193, 0.2] target=[-98.91, 4.16, 2.56, -101.27, 5.69, 33.33] gripper=80.0->model:82.0 command:82.0 qpos_source=forced qpos_stale_steps=82 qpos_age=-0.002 qpos_stale=warn
+  http sent=[] server_delta=None
+step=88 mode=target current=[-98.08, 3.77, 2.54, -99.66, 5.88, 33.13] raw_delta=[-1.567, 0.676, 0.076, -3.126, -0.38, 0.422] scaled_delta=[-0.784, 0.338, 0.038, -1.563, -0.19, 0.211] clamped_delta=[-0.784, 0.338, 0.038, -1.563, -0.19, 0.211] target=[-98.86, 4.11, 2.58, -101.22, 5.69, 33.34] gripper=80.0->model:82.0 command:82.0 qpos_source=forced qpos_stale_steps=83 qpos_age=-0.002 qpos_stale=warn
+  http sent=[] server_delta=None
+step=89 mode=target current=[-98.08, 3.77, 2.54, -99.66, 5.88, 33.13] raw_delta=[-1.442, 0.765, 0.094, -3.18, -0.296, 0.416] scaled_delta=[-0.721, 0.383, 0.047, -1.59, -0.148, 0.208] clamped_delta=[-0.721, 0.383, 0.047, -1.59, -0.148, 0.208] target=[-98.8, 4.15, 2.59, -101.25, 5.73, 33.34] gripper=80.0->model:82.1 command:82.1 qpos_source=forced qpos_stale_steps=84 qpos_age=-0.003 qpos_stale=warn
+  http sent=[] server_delta=None
+replanned action chunk at step=90
+step=90 mode=target current=[-98.08, 3.77, 2.54, -99.66, 5.88, 33.13] raw_delta=[-1.909, 0.53, -0.01, -3.018, -0.515, 0.303] scaled_delta=[-0.954, 0.265, -0.005, -1.509, -0.257, 0.152] clamped_delta=[-0.954, 0.265, -0.005, -1.509, -0.257, 0.152] target=[-99.03, 4.04, 2.53, -101.17, 5.62, 33.28] gripper=80.0->model:81.9 command:81.9 qpos_source=forced qpos_stale_steps=85 qpos_age=-0.002 qpos_stale=warn
+  http sent=[] server_delta=None
+step=91 mode=target current=[-98.08, 3.77, 2.54, -99.66, 5.88, 33.13] raw_delta=[-1.856, 0.598, 0.005, -3.093, -0.458, 0.334] scaled_delta=[-0.928, 0.299, 0.002, -1.547, -0.229, 0.167] clamped_delta=[-0.928, 0.299, 0.002, -1.547, -0.229, 0.167] target=[-99.01, 4.07, 2.54, -101.21, 5.65, 33.3] gripper=80.0->model:82.0 command:82.0 qpos_source=forced qpos_stale_steps=86 qpos_age=-0.01 qpos_stale=warn
+  http sent=[] server_delta=None
+step=92 mode=target current=[-98.08, 3.77, 2.54, -99.66, 5.88, 33.13] raw_delta=[-1.874, 0.61, 0.005, -3.142, -0.466, 0.339] scaled_delta=[-0.937, 0.305, 0.002, -1.571, -0.233, 0.169] clamped_delta=[-0.937, 0.305, 0.002, -1.571, -0.233, 0.169] target=[-99.02, 4.07, 2.54, -101.23, 5.65, 33.3] gripper=80.0->model:82.0 command:82.0 qpos_source=forced qpos_stale_steps=87 qpos_age=-0.007 qpos_stale=warn
+  http sent=[] server_delta=None
+step=93 mode=target current=[-98.08, 3.77, 2.54, -99.66, 5.88, 33.13] raw_delta=[-1.802, 0.546, 0.029, -3.033, -0.463, 0.351] scaled_delta=[-0.901, 0.273, 0.014, -1.517, -0.231, 0.176] clamped_delta=[-0.901, 0.273, 0.014, -1.517, -0.231, 0.176] target=[-98.98, 4.04, 2.55, -101.18, 5.65, 33.31] gripper=80.0->model:82.0 command:82.0 qpos_source=forced qpos_stale_steps=88 qpos_age=-0.005 qpos_stale=warn
+  http sent=[] server_delta=None
+step=94 mode=target current=[-98.08, 3.77, 2.54, -99.66, 5.88, 33.13] raw_delta=[-1.673, 0.621, 0.037, -3.048, -0.386, 0.347] scaled_delta=[-0.836, 0.31, 0.018, -1.524, -0.193, 0.174] clamped_delta=[-0.836, 0.31, 0.018, -1.524, -0.193, 0.174] target=[-98.92, 4.08, 2.56, -101.18, 5.69, 33.3] gripper=80.0->model:82.0 command:82.0 qpos_source=forced qpos_stale_steps=89 qpos_age=-0.004 qpos_stale=warn
+  http sent=[] server_delta=None
+replanned action chunk at step=95
+step=95 mode=target current=[-98.08, 3.77, 2.54, -99.66, 5.88, 33.13] raw_delta=[-1.877, 0.519, 0.046, -3.19, -0.442, 0.341] scaled_delta=[-0.939, 0.26, 0.023, -1.595, -0.221, 0.171] clamped_delta=[-0.939, 0.26, 0.023, -1.595, -0.221, 0.171] target=[-99.02, 4.03, 2.56, -101.26, 5.66, 33.3] gripper=80.0->model:82.0 command:82.0 qpos_source=forced qpos_stale_steps=90 qpos_age=-0.005 qpos_stale=warn
+  http sent=[] server_delta=None
+step=96 mode=target current=[-98.08, 3.77, 2.54, -99.66, 5.88, 33.13] raw_delta=[-1.817, 0.613, 0.063, -3.276, -0.382, 0.365] scaled_delta=[-0.908, 0.306, 0.031, -1.638, -0.191, 0.182] clamped_delta=[-0.908, 0.306, 0.031, -1.638, -0.191, 0.182] target=[-98.99, 4.08, 2.57, -101.3, 5.69, 33.31] gripper=80.0->model:82.0 command:82.0 qpos_source=forced qpos_stale_steps=91 qpos_age=-0.006 qpos_stale=warn
+  http sent=[] server_delta=None
+step=97 mode=target current=[-98.08, 3.77, 2.54, -99.66, 5.88, 33.13] raw_delta=[-1.828, 0.625, 0.059, -3.302, -0.392, 0.366] scaled_delta=[-0.914, 0.313, 0.029, -1.651, -0.196, 0.183] clamped_delta=[-0.914, 0.313, 0.029, -1.651, -0.196, 0.183] target=[-98.99, 4.08, 2.57, -101.31, 5.68, 33.31] gripper=80.0->model:82.0 command:82.0 qpos_source=forced qpos_stale_steps=92 qpos_age=-0.004 qpos_stale=warn
+  http sent=[] server_delta=None
+step=98 mode=target current=[-98.08, 3.77, 2.54, -99.66, 5.88, 33.13] raw_delta=[-1.77, 0.533, 0.08, -3.215, -0.387, 0.386] scaled_delta=[-0.885, 0.266, 0.04, -1.608, -0.193, 0.193] clamped_delta=[-0.885, 0.266, 0.04, -1.608, -0.193, 0.193] target=[-98.97, 4.04, 2.58, -101.27, 5.69, 33.32] gripper=80.0->model:82.0 command:82.0 qpos_source=forced qpos_stale_steps=93 qpos_age=-0.001 qpos_stale=warn
+  http sent=[] server_delta=None
+step=99 mode=target current=[-98.08, 3.77, 2.54, -99.66, 5.88, 33.13] raw_delta=[-1.642, 0.636, 0.096, -3.264, -0.304, 0.386] scaled_delta=[-0.821, 0.318, 0.048, -1.632, -0.152, 0.193] clamped_delta=[-0.821, 0.318, 0.048, -1.632, -0.152, 0.193] target=[-98.9, 4.09, 2.59, -101.29, 5.73, 33.32] gripper=80.0->model:82.1 command:82.1 qpos_source=forced qpos_stale_steps=94 qpos_age=-0.007 qpos_stale=warn
+  http sent=[] server_delta=None
+replanned action chunk at step=100
+step=100 mode=target current=[-98.08, 3.77, 2.54, -99.66, 5.88, 33.13] raw_delta=[-1.753, 0.713, 0.055, -2.81, -0.501, 0.335] scaled_delta=[-0.877, 0.356, 0.027, -1.405, -0.251, 0.168] clamped_delta=[-0.877, 0.356, 0.027, -1.405, -0.251, 0.168] target=[-98.96, 4.13, 2.57, -101.06, 5.63, 33.3] gripper=80.0->model:82.1 command:82.1 qpos_source=forced qpos_stale_steps=95 qpos_age=-0.005 qpos_stale=warn
+  http sent=[] server_delta=None
+step=101 mode=target current=[-98.08, 3.77, 2.54, -99.66, 5.88, 33.13] raw_delta=[-1.7, 0.784, 0.077, -2.895, -0.446, 0.378] scaled_delta=[-0.85, 0.392, 0.039, -1.447, -0.223, 0.189] clamped_delta=[-0.85, 0.392, 0.039, -1.447, -0.223, 0.189] target=[-98.93, 4.16, 2.58, -101.11, 5.66, 33.32] gripper=80.0->model:82.2 command:82.2 qpos_source=forced qpos_stale_steps=96 qpos_age=-0.006 qpos_stale=warn
+  http sent=[] server_delta=None
+step=102 mode=target current=[-98.08, 3.77, 2.54, -99.66, 5.88, 33.13] raw_delta=[-1.704, 0.814, 0.076, -2.924, -0.452, 0.379] scaled_delta=[-0.852, 0.407, 0.038, -1.462, -0.226, 0.189] clamped_delta=[-0.852, 0.407, 0.038, -1.462, -0.226, 0.189] target=[-98.93, 4.18, 2.58, -101.12, 5.65, 33.32] gripper=80.0->model:82.2 command:82.2 qpos_source=forced qpos_stale_steps=97 qpos_age=-0.006 qpos_stale=warn
+  http sent=[] server_delta=None
+step=103 mode=target current=[-98.08, 3.77, 2.54, -99.66, 5.88, 33.13] raw_delta=[-1.637, 0.728, 0.095, -2.826, -0.447, 0.405] scaled_delta=[-0.819, 0.364, 0.048, -1.413, -0.224, 0.202] clamped_delta=[-0.819, 0.364, 0.048, -1.413, -0.224, 0.202] target=[-98.9, 4.13, 2.59, -101.07, 5.66, 33.33] gripper=80.0->model:82.2 command:82.2 qpos_source=forced qpos_stale_steps=98 qpos_age=-0.003 qpos_stale=warn
+  http sent=[] server_delta=None
+step=104 mode=target current=[-98.08, 3.77, 2.54, -99.66, 5.88, 33.13] raw_delta=[-1.503, 0.814, 0.123, -2.888, -0.364, 0.386] scaled_delta=[-0.751, 0.407, 0.062, -1.444, -0.182, 0.193] clamped_delta=[-0.751, 0.407, 0.062, -1.444, -0.182, 0.193] target=[-98.83, 4.18, 2.6, -101.1, 5.7, 33.32] gripper=80.0->model:82.2 command:82.2 qpos_source=forced qpos_stale_steps=99 qpos_age=-0.004 qpos_stale=warn
+  http sent=[] server_delta=None
+replanned action chunk at step=105
+step=105 mode=target current=[-98.08, 3.77, 2.54, -99.66, 5.88, 33.13] raw_delta=[-2.049, 0.543, 0.01, -2.872, -0.46, 0.242] scaled_delta=[-1.025, 0.272, 0.005, -1.436, -0.23, 0.121] clamped_delta=[-1.025, 0.272, 0.005, -1.436, -0.23, 0.121] target=[-99.1, 4.04, 2.54, -101.1, 5.65, 33.25] gripper=80.0->model:81.9 command:81.9 qpos_source=forced qpos_stale_steps=100 qpos_age=-0.004 qpos_stale=warn
+  http sent=[] server_delta=None
+step=106 mode=target current=[-98.08, 3.77, 2.54, -99.66, 5.88, 33.13] raw_delta=[-1.975, 0.635, 0.027, -2.98, -0.402, 0.291] scaled_delta=[-0.987, 0.318, 0.013, -1.49, -0.201, 0.145] clamped_delta=[-0.987, 0.318, 0.013, -1.49, -0.201, 0.145] target=[-99.07, 4.09, 2.55, -101.15, 5.68, 33.28] gripper=80.0->model:81.9 command:81.9 qpos_source=forced qpos_stale_steps=101 qpos_age=-0.007 qpos_stale=warn
+  http sent=[] server_delta=None
+step=107 mode=target current=[-98.08, 3.77, 2.54, -99.66, 5.88, 33.13] raw_delta=[-1.992, 0.664, 0.024, -3.017, -0.41, 0.292] scaled_delta=[-0.996, 0.332, 0.012, -1.508, -0.205, 0.146] clamped_delta=[-0.996, 0.332, 0.012, -1.508, -0.205, 0.146] target=[-99.08, 4.1, 2.55, -101.17, 5.67, 33.28] gripper=80.0->model:81.9 command:81.9 qpos_source=forced qpos_stale_steps=102 qpos_age=-0.007 qpos_stale=warn
+  http sent=[] server_delta=None
+step=108 mode=target current=[-98.08, 3.77, 2.54, -99.66, 5.88, 33.13] raw_delta=[-1.921, 0.579, 0.044, -2.93, -0.403, 0.323] scaled_delta=[-0.96, 0.29, 0.022, -1.465, -0.202, 0.161] clamped_delta=[-0.96, 0.29, 0.022, -1.465, -0.202, 0.161] target=[-99.04, 4.06, 2.56, -101.13, 5.68, 33.29] gripper=80.0->model:82.0 command:82.0 qpos_source=forced qpos_stale_steps=103 qpos_age=-0.004 qpos_stale=warn
+  http sent=[] server_delta=None
+step=109 mode=target current=[-98.08, 3.77, 2.54, -99.66, 5.88, 33.13] raw_delta=[-1.799, 0.653, 0.056, -2.953, -0.322, 0.303] scaled_delta=[-0.899, 0.326, 0.028, -1.476, -0.161, 0.152] clamped_delta=[-0.899, 0.326, 0.028, -1.476, -0.161, 0.152] target=[-98.98, 4.1, 2.57, -101.14, 5.72, 33.28] gripper=80.0->model:82.0 command:82.0 qpos_source=forced qpos_stale_steps=104 qpos_age=-0.0 qpos_stale=warn
+  http sent=[] server_delta=None
+replanned action chunk at step=110
+step=110 mode=target current=[-98.08, 3.77, 2.54, -99.66, 5.88, 33.13] raw_delta=[-1.71, 0.731, 0.075, -2.864, -0.473, 0.331] scaled_delta=[-0.855, 0.366, 0.037, -1.432, -0.237, 0.166] clamped_delta=[-0.855, 0.366, 0.037, -1.432, -0.237, 0.166] target=[-98.94, 4.14, 2.58, -101.09, 5.64, 33.3] gripper=80.0->model:81.8 command:81.8 qpos_source=forced qpos_stale_steps=105 qpos_age=0.0 qpos_stale=warn
+  http sent=[] server_delta=None
+step=111 mode=target current=[-98.08, 3.77, 2.54, -99.66, 5.88, 33.13] raw_delta=[-1.657, 0.814, 0.09, -2.967, -0.423, 0.368] scaled_delta=[-0.828, 0.407, 0.045, -1.484, -0.212, 0.184] clamped_delta=[-0.828, 0.407, 0.045, -1.484, -0.212, 0.184] target=[-98.91, 4.18, 2.58, -101.14, 5.67, 33.31] gripper=80.0->model:81.8 command:81.8 qpos_source=forced qpos_stale_steps=106 qpos_age=-0.003 qpos_stale=warn
+  http sent=[] server_delta=None
+step=112 mode=target current=[-98.08, 3.77, 2.54, -99.66, 5.88, 33.13] raw_delta=[-1.664, 0.836, 0.086, -2.976, -0.428, 0.368] scaled_delta=[-0.832, 0.418, 0.043, -1.488, -0.214, 0.184] clamped_delta=[-0.832, 0.418, 0.043, -1.488, -0.214, 0.184] target=[-98.91, 4.19, 2.58, -101.15, 5.67, 33.31] gripper=80.0->model:81.8 command:81.8 qpos_source=forced qpos_stale_steps=107 qpos_age=-0.006 qpos_stale=warn
+  http sent=[] server_delta=None
+step=113 mode=target current=[-98.08, 3.77, 2.54, -99.66, 5.88, 33.13] raw_delta=[-1.595, 0.746, 0.106, -2.906, -0.417, 0.403] scaled_delta=[-0.798, 0.373, 0.053, -1.453, -0.208, 0.202] clamped_delta=[-0.798, 0.373, 0.053, -1.453, -0.208, 0.202] target=[-98.88, 4.14, 2.59, -101.11, 5.67, 33.33] gripper=80.0->model:81.9 command:81.9 qpos_source=forced qpos_stale_steps=108 qpos_age=-0.006 qpos_stale=warn
+  http sent=[] server_delta=None
+step=114 mode=target current=[-98.08, 3.77, 2.54, -99.66, 5.88, 33.13] raw_delta=[-1.485, 0.849, 0.128, -2.936, -0.343, 0.395] scaled_delta=[-0.743, 0.425, 0.064, -1.468, -0.171, 0.197] clamped_delta=[-0.743, 0.425, 0.064, -1.468, -0.171, 0.197] target=[-98.82, 4.19, 2.6, -101.13, 5.71, 33.33] gripper=80.0->model:81.9 command:81.9 qpos_source=forced qpos_stale_steps=109 qpos_age=-0.005 qpos_stale=warn
+  http sent=[] server_delta=None
+replanned action chunk at step=115
+step=115 mode=target current=[-98.08, 3.77, 2.54, -99.66, 5.88, 33.13] raw_delta=[-1.323, 0.526, 0.029, -2.9, -0.312, 0.308] scaled_delta=[-0.661, 0.263, 0.015, -1.45, -0.156, 0.154] clamped_delta=[-0.661, 0.263, 0.015, -1.45, -0.156, 0.154] target=[-98.74, 4.03, 2.55, -101.11, 5.72, 33.28] gripper=80.0->model:81.9 command:81.9 qpos_source=forced qpos_stale_steps=110 qpos_age=-0.004 qpos_stale=warn
+  http sent=[] server_delta=None
+step=116 mode=target current=[-98.08, 3.77, 2.54, -99.66, 5.88, 33.13] raw_delta=[-1.252, 0.595, 0.042, -2.993, -0.248, 0.335] scaled_delta=[-0.626, 0.297, 0.021, -1.497, -0.124, 0.168] clamped_delta=[-0.626, 0.297, 0.021, -1.497, -0.124, 0.168] target=[-98.71, 4.07, 2.56, -101.16, 5.76, 33.3] gripper=80.0->model:81.9 command:81.9 qpos_source=forced qpos_stale_steps=111 qpos_age=-0.006 qpos_stale=warn
+  http sent=[] server_delta=None
+step=117 mode=target current=[-98.08, 3.77, 2.54, -99.66, 5.88, 33.13] raw_delta=[-1.278, 0.627, 0.035, -3.014, -0.259, 0.339] scaled_delta=[-0.639, 0.313, 0.017, -1.507, -0.129, 0.17] clamped_delta=[-0.639, 0.313, 0.017, -1.507, -0.129, 0.17] target=[-98.72, 4.08, 2.56, -101.17, 5.75, 33.3] gripper=80.0->model:81.9 command:81.9 qpos_source=forced qpos_stale_steps=112 qpos_age=-0.003 qpos_stale=warn
+  http sent=[] server_delta=None
+step=118 mode=target current=[-98.08, 3.77, 2.54, -99.66, 5.88, 33.13] raw_delta=[-1.187, 0.552, 0.067, -2.94, -0.245, 0.358] scaled_delta=[-0.593, 0.276, 0.034, -1.47, -0.123, 0.179] clamped_delta=[-0.593, 0.276, 0.034, -1.47, -0.123, 0.179] target=[-98.67, 4.05, 2.57, -101.13, 5.76, 33.31] gripper=80.0->model:82.0 command:82.0 qpos_source=forced qpos_stale_steps=113 qpos_age=-0.004 qpos_stale=warn
+  http sent=[] server_delta=None
+step=119 mode=target current=[-98.08, 3.77, 2.54, -99.66, 5.88, 33.13] raw_delta=[-1.056, 0.633, 0.082, -2.976, -0.165, 0.356] scaled_delta=[-0.528, 0.317, 0.041, -1.488, -0.082, 0.178] clamped_delta=[-0.528, 0.317, 0.041, -1.488, -0.082, 0.178] target=[-98.61, 4.09, 2.58, -101.15, 5.8, 33.31] gripper=80.0->model:82.0 command:82.0 qpos_source=forced qpos_stale_steps=114 qpos_age=-0.004 qpos_stale=warn
+  http sent=[] server_delta=None
+replanned action chunk at step=120
+step=120 mode=target current=[-98.08, 3.77, 2.54, -99.66, 5.88, 33.13] raw_delta=[-1.512, 0.441, 0.013, -2.826, -0.454, 0.388] scaled_delta=[-0.756, 0.22, 0.007, -1.413, -0.227, 0.194] clamped_delta=[-0.756, 0.22, 0.007, -1.413, -0.227, 0.194] target=[-98.84, 3.99, 2.55, -101.07, 5.65, 33.32] gripper=80.0->model:81.8 command:81.8 qpos_source=forced qpos_stale_steps=115 qpos_age=-0.001 qpos_stale=warn
+  http sent=[] server_delta=None
+step=121 mode=target current=[-98.08, 3.77, 2.54, -99.66, 5.88, 33.13] raw_delta=[-1.434, 0.503, 0.033, -2.912, -0.392, 0.425] scaled_delta=[-0.717, 0.251, 0.016, -1.456, -0.196, 0.212] clamped_delta=[-0.717, 0.251, 0.016, -1.456, -0.196, 0.212] target=[-98.8, 4.02, 2.56, -101.12, 5.68, 33.34] gripper=80.0->model:81.8 command:81.8 qpos_source=forced qpos_stale_steps=116 qpos_age=-0.003 qpos_stale=warn
+  http sent=[] server_delta=None
+step=122 mode=target current=[-98.08, 3.77, 2.54, -99.66, 5.88, 33.13] raw_delta=[-1.445, 0.52, 0.029, -2.921, -0.404, 0.421] scaled_delta=[-0.722, 0.26, 0.015, -1.461, -0.202, 0.211] clamped_delta=[-0.722, 0.26, 0.015, -1.461, -0.202, 0.211] target=[-98.8, 4.03, 2.55, -101.12, 5.68, 33.34] gripper=80.0->model:81.8 command:81.8 qpos_source=forced qpos_stale_steps=117 qpos_age=-0.004 qpos_stale=warn
+  http sent=[] server_delta=None
+step=123 mode=target current=[-98.08, 3.77, 2.54, -99.66, 5.88, 33.13] raw_delta=[-1.385, 0.466, 0.046, -2.838, -0.393, 0.437] scaled_delta=[-0.693, 0.233, 0.023, -1.419, -0.196, 0.219] clamped_delta=[-0.693, 0.233, 0.023, -1.419, -0.196, 0.219] target=[-98.77, 4.0, 2.56, -101.08, 5.68, 33.35] gripper=80.0->model:81.9 command:81.9 qpos_source=forced qpos_stale_steps=118 qpos_age=-0.006 qpos_stale=warn
+  http sent=[] server_delta=None
+step=124 mode=target current=[-98.08, 3.77, 2.54, -99.66, 5.88, 33.13] raw_delta=[-1.261, 0.525, 0.06, -2.876, -0.317, 0.427] scaled_delta=[-0.63, 0.262, 0.03, -1.438, -0.158, 0.213] clamped_delta=[-0.63, 0.262, 0.03, -1.438, -0.158, 0.213] target=[-98.71, 4.03, 2.57, -101.1, 5.72, 33.34] gripper=80.0->model:81.8 command:81.8 qpos_source=forced qpos_stale_steps=119 qpos_age=-0.008 qpos_stale=warn
+  http sent=[] server_delta=None
+replanned action chunk at step=125
+step=125 mode=target current=[-98.08, 3.77, 2.54, -99.66, 5.88, 33.13] raw_delta=[-1.503, 0.674, 0.068, -2.98, -0.299, 0.348] scaled_delta=[-0.752, 0.337, 0.034, -1.49, -0.15, 0.174] clamped_delta=[-0.752, 0.337, 0.034, -1.49, -0.15, 0.174] target=[-98.83, 4.11, 2.57, -101.15, 5.73, 33.3] gripper=80.0->model:82.0 command:82.0 qpos_source=forced qpos_stale_steps=120 qpos_age=-0.004 qpos_stale=warn
+  http sent=[] server_delta=None
+step=126 mode=target current=[-98.08, 3.77, 2.54, -99.66, 5.88, 33.13] raw_delta=[-1.42, 0.756, 0.086, -3.068, -0.24, 0.384] scaled_delta=[-0.71, 0.378, 0.043, -1.534, -0.12, 0.192] clamped_delta=[-0.71, 0.378, 0.043, -1.534, -0.12, 0.192] target=[-98.79, 4.15, 2.58, -101.19, 5.76, 33.32] gripper=80.0->model:82.1 command:82.1 qpos_source=forced qpos_stale_steps=121 qpos_age=-0.004 qpos_stale=warn
+  http sent=[] server_delta=None
+step=127 mode=target current=[-98.08, 3.77, 2.54, -99.66, 5.88, 33.13] raw_delta=[-1.445, 0.769, 0.078, -3.091, -0.249, 0.381] scaled_delta=[-0.723, 0.385, 0.039, -1.546, -0.125, 0.19] clamped_delta=[-0.723, 0.385, 0.039, -1.546, -0.125, 0.19] target=[-98.8, 4.15, 2.58, -101.21, 5.76, 33.32] gripper=80.0->model:82.1 command:82.1 qpos_source=forced qpos_stale_steps=122 qpos_age=-0.008 qpos_stale=warn
+  http sent=[] server_delta=None
+step=128 mode=target current=[-98.08, 3.77, 2.54, -99.66, 5.88, 33.13] raw_delta=[-1.352, 0.707, 0.101, -2.999, -0.237, 0.395] scaled_delta=[-0.676, 0.354, 0.051, -1.499, -0.119, 0.197] clamped_delta=[-0.676, 0.354, 0.051, -1.499, -0.119, 0.197] target=[-98.76, 4.12, 2.59, -101.16, 5.76, 33.33] gripper=80.0->model:82.1 command:82.1 qpos_source=forced qpos_stale_steps=123 qpos_age=-0.002 qpos_stale=warn
+  http sent=[] server_delta=None
+step=129 mode=target current=[-98.08, 3.77, 2.54, -99.66, 5.88, 33.13] raw_delta=[-1.248, 0.794, 0.116, -3.064, -0.158, 0.387] scaled_delta=[-0.624, 0.397, 0.058, -1.532, -0.079, 0.193] clamped_delta=[-0.624, 0.397, 0.058, -1.532, -0.079, 0.193] target=[-98.7, 4.17, 2.6, -101.19, 5.8, 33.32] gripper=80.0->model:82.1 command:82.1 qpos_source=forced qpos_stale_steps=124 qpos_age=-0.001 qpos_stale=warn
+  http sent=[] server_delta=None
+replanned action chunk at step=130
+step=130 mode=target current=[-98.08, 3.77, 2.54, -99.66, 5.88, 33.13] raw_delta=[-1.549, 0.221, 0.054, -3.012, -0.533, 0.324] scaled_delta=[-0.774, 0.11, 0.027, -1.506, -0.267, 0.162] clamped_delta=[-0.774, 0.11, 0.027, -1.506, -0.267, 0.162] target=[-98.85, 3.88, 2.57, -101.17, 5.61, 33.29] gripper=80.0->model:82.0 command:82.0 qpos_source=forced qpos_stale_steps=125 qpos_age=0.003 qpos_stale=warn
+  http sent=[] server_delta=None
+step=131 mode=target current=[-98.08, 3.77, 2.54, -99.66, 5.88, 33.13] raw_delta=[-1.489, 0.296, 0.068, -3.092, -0.479, 0.362] scaled_delta=[-0.744, 0.148, 0.034, -1.546, -0.24, 0.181] clamped_delta=[-0.744, 0.148, 0.034, -1.546, -0.24, 0.181] target=[-98.82, 3.92, 2.57, -101.21, 5.64, 33.31] gripper=80.0->model:82.0 command:82.0 qpos_source=forced qpos_stale_steps=126 qpos_age=-0.003 qpos_stale=warn
+  http sent=[] server_delta=None
+step=132 mode=target current=[-98.08, 3.77, 2.54, -99.66, 5.88, 33.13] raw_delta=[-1.504, 0.325, 0.069, -3.13, -0.49, 0.36] scaled_delta=[-0.752, 0.163, 0.034, -1.565, -0.245, 0.18] clamped_delta=[-0.752, 0.163, 0.034, -1.565, -0.245, 0.18] target=[-98.83, 3.93, 2.57, -101.23, 5.63, 33.31] gripper=80.0->model:82.0 command:82.0 qpos_source=forced qpos_stale_steps=127 qpos_age=0.003 qpos_stale=warn
+  http sent=[] server_delta=None
+step=133 mode=target current=[-98.08, 3.77, 2.54, -99.66, 5.88, 33.13] raw_delta=[-1.409, 0.249, 0.087, -3.013, -0.484, 0.388] scaled_delta=[-0.705, 0.125, 0.044, -1.506, -0.242, 0.194] clamped_delta=[-0.705, 0.125, 0.044, -1.506, -0.242, 0.194] target=[-98.78, 3.89, 2.58, -101.17, 5.64, 33.32] gripper=80.0->model:82.0 command:82.0 qpos_source=forced qpos_stale_steps=128 qpos_age=-0.002 qpos_stale=warn
+  http sent=[] server_delta=None
+step=134 mode=target current=[-98.08, 3.77, 2.54, -99.66, 5.88, 33.13] raw_delta=[-1.302, 0.337, 0.102, -3.094, -0.404, 0.383] scaled_delta=[-0.651, 0.168, 0.051, -1.547, -0.202, 0.192] clamped_delta=[-0.651, 0.168, 0.051, -1.547, -0.202, 0.192] target=[-98.73, 3.94, 2.59, -101.21, 5.68, 33.32] gripper=80.0->model:82.0 command:82.0 qpos_source=forced qpos_stale_steps=129 qpos_age=0.002 qpos_stale=warn
+  http sent=[] server_delta=None
+replanned action chunk at step=135
+step=135 mode=target current=[-98.08, 3.77, 2.54, -99.66, 5.88, 33.13] raw_delta=[-1.807, 0.537, 0.014, -3.039, -0.533, 0.364] scaled_delta=[-0.903, 0.269, 0.007, -1.519, -0.267, 0.182] clamped_delta=[-0.903, 0.269, 0.007, -1.519, -0.267, 0.182] target=[-98.98, 4.04, 2.55, -101.18, 5.61, 33.31] gripper=80.0->model:82.1 command:82.1 qpos_source=forced qpos_stale_steps=130 qpos_age=-0.002 qpos_stale=warn
+  http sent=[] server_delta=None
+step=136 mode=target current=[-98.08, 3.77, 2.54, -99.66, 5.88, 33.13] raw_delta=[-1.732, 0.606, 0.034, -3.13, -0.471, 0.394] scaled_delta=[-0.866, 0.303, 0.017, -1.565, -0.236, 0.197] clamped_delta=[-0.866, 0.303, 0.017, -1.565, -0.236, 0.197] target=[-98.95, 4.07, 2.56, -101.23, 5.64, 33.33] gripper=80.0->model:82.1 command:82.1 qpos_source=forced qpos_stale_steps=131 qpos_age=-0.001 qpos_stale=warn
+  http sent=[] server_delta=None
+step=137 mode=target current=[-98.08, 3.77, 2.54, -99.66, 5.88, 33.13] raw_delta=[-1.748, 0.628, 0.028, -3.148, -0.484, 0.397] scaled_delta=[-0.874, 0.314, 0.014, -1.574, -0.242, 0.199] clamped_delta=[-0.874, 0.314, 0.014, -1.574, -0.242, 0.199] target=[-98.95, 4.08, 2.55, -101.23, 5.64, 33.33] gripper=80.0->model:82.1 command:82.1 qpos_source=forced qpos_stale_steps=132 qpos_age=0.004 qpos_stale=warn
+  http sent=[] server_delta=None
+step=138 mode=target current=[-98.08, 3.77, 2.54, -99.66, 5.88, 33.13] raw_delta=[-1.645, 0.546, 0.05, -3.055, -0.47, 0.417] scaled_delta=[-0.823, 0.273, 0.025, -1.528, -0.235, 0.208] clamped_delta=[-0.823, 0.273, 0.025, -1.528, -0.235, 0.208] target=[-98.9, 4.04, 2.56, -101.19, 5.65, 33.34] gripper=80.0->model:82.2 command:82.2 qpos_source=forced qpos_stale_steps=133 qpos_age=-0.003 qpos_stale=warn
+  http sent=[] server_delta=None
+step=139 mode=target current=[-98.08, 3.77, 2.54, -99.66, 5.88, 33.13] raw_delta=[-1.538, 0.642, 0.07, -3.136, -0.394, 0.41] scaled_delta=[-0.769, 0.321, 0.035, -1.568, -0.197, 0.205] clamped_delta=[-0.769, 0.321, 0.035, -1.568, -0.197, 0.205] target=[-98.85, 4.09, 2.57, -101.23, 5.68, 33.34] gripper=80.0->model:82.2 command:82.2 qpos_source=forced qpos_stale_steps=134 qpos_age=0.007 qpos_stale=warn
+  http sent=[] server_delta=None
+replanned action chunk at step=140
+step=140 mode=target current=[-98.08, 3.77, 2.54, -99.66, 5.88, 33.13] raw_delta=[-1.66, 0.561, 0.094, -3.142, -0.323, 0.304] scaled_delta=[-0.83, 0.28, 0.047, -1.571, -0.162, 0.152] clamped_delta=[-0.83, 0.28, 0.047, -1.571, -0.162, 0.152] target=[-98.91, 4.05, 2.59, -101.23, 5.72, 33.28] gripper=80.0->model:82.1 command:82.1 qpos_source=forced qpos_stale_steps=135 qpos_age=-0.002 qpos_stale=warn
+  http sent=[] server_delta=None
+step=141 mode=target current=[-98.08, 3.77, 2.54, -99.66, 5.88, 33.13] raw_delta=[-1.616, 0.63, 0.101, -3.247, -0.272, 0.342] scaled_delta=[-0.808, 0.315, 0.051, -1.623, -0.136, 0.171] clamped_delta=[-0.808, 0.315, 0.051, -1.623, -0.136, 0.171] target=[-98.89, 4.08, 2.59, -101.28, 5.74, 33.3] gripper=80.0->model:82.1 command:82.1 qpos_source=forced qpos_stale_steps=136 qpos_age=0.003 qpos_stale=warn
+  http sent=[] server_delta=None
+step=142 mode=target current=[-98.08, 3.77, 2.54, -99.66, 5.88, 33.13] raw_delta=[-1.626, 0.645, 0.097, -3.247, -0.28, 0.341] scaled_delta=[-0.813, 0.322, 0.049, -1.623, -0.14, 0.171] clamped_delta=[-0.813, 0.322, 0.049, -1.623, -0.14, 0.171] target=[-98.89, 4.09, 2.59, -101.28, 5.74, 33.3] gripper=80.0->model:82.1 command:82.1 qpos_source=forced qpos_stale_steps=137 qpos_age=0.003 qpos_stale=warn
+  http sent=[] server_delta=None
+step=143 mode=target current=[-98.08, 3.77, 2.54, -99.66, 5.88, 33.13] raw_delta=[-1.538, 0.578, 0.125, -3.18, -0.267, 0.362] scaled_delta=[-0.769, 0.289, 0.062, -1.59, -0.134, 0.181] clamped_delta=[-0.769, 0.289, 0.062, -1.59, -0.134, 0.181] target=[-98.85, 4.06, 2.6, -101.25, 5.75, 33.31] gripper=80.0->model:82.1 command:82.1 qpos_source=forced qpos_stale_steps=138 qpos_age=-0.006 qpos_stale=warn
+  http sent=[] server_delta=None
+step=144 mode=target current=[-98.08, 3.77, 2.54, -99.66, 5.88, 33.13] raw_delta=[-1.428, 0.64, 0.137, -3.223, -0.189, 0.351] scaled_delta=[-0.714, 0.32, 0.068, -1.611, -0.095, 0.176] clamped_delta=[-0.714, 0.32, 0.068, -1.611, -0.095, 0.176] target=[-98.79, 4.09, 2.61, -101.27, 5.79, 33.31] gripper=80.0->model:82.2 command:82.2 qpos_source=forced qpos_stale_steps=139 qpos_age=-0.005 qpos_stale=warn
+  http sent=[] server_delta=None
+replanned action chunk at step=145
+step=145 mode=target current=[-98.08, 3.77, 2.54, -99.66, 5.88, 33.13] raw_delta=[-1.646, 0.5, 0.107, -3.066, -0.491, 0.45] scaled_delta=[-0.823, 0.25, 0.053, -1.533, -0.246, 0.225] clamped_delta=[-0.823, 0.25, 0.053, -1.533, -0.246, 0.225] target=[-98.9, 4.02, 2.59, -101.19, 5.63, 33.36] gripper=80.0->model:81.9 command:81.9 qpos_source=forced qpos_stale_steps=140 qpos_age=0.001 qpos_stale=warn
+  http sent=[] server_delta=None
+step=146 mode=target current=[-98.08, 3.77, 2.54, -99.66, 5.88, 33.13] raw_delta=[-1.585, 0.582, 0.13, -3.161, -0.426, 0.487] scaled_delta=[-0.793, 0.291, 0.065, -1.58, -0.213, 0.243] clamped_delta=[-0.793, 0.291, 0.065, -1.58, -0.213, 0.243] target=[-98.87, 4.06, 2.61, -101.24, 5.67, 33.37] gripper=80.0->model:81.9 command:81.9 qpos_source=forced qpos_stale_steps=141 qpos_age=-0.002 qpos_stale=warn
+  http sent=[] server_delta=None
+step=147 mode=target current=[-98.08, 3.77, 2.54, -99.66, 5.88, 33.13] raw_delta=[-1.593, 0.601, 0.124, -3.181, -0.437, 0.485] scaled_delta=[-0.797, 0.3, 0.062, -1.59, -0.219, 0.243] clamped_delta=[-0.797, 0.3, 0.062, -1.59, -0.219, 0.243] target=[-98.88, 4.07, 2.6, -101.25, 5.66, 33.37] gripper=80.0->model:81.9 command:81.9 qpos_source=forced qpos_stale_steps=142 qpos_age=0.002 qpos_stale=warn
+  http sent=[] server_delta=None
+step=148 mode=target current=[-98.08, 3.77, 2.54, -99.66, 5.88, 33.13] raw_delta=[-1.514, 0.525, 0.149, -3.082, -0.429, 0.509] scaled_delta=[-0.757, 0.262, 0.074, -1.541, -0.214, 0.254] clamped_delta=[-0.757, 0.262, 0.074, -1.541, -0.214, 0.254] target=[-98.84, 4.03, 2.61, -101.2, 5.67, 33.38] gripper=80.0->model:82.0 command:82.0 qpos_source=forced qpos_stale_steps=143 qpos_age=-0.002 qpos_stale=warn
+  http sent=[] server_delta=None
+step=149 mode=target current=[-98.08, 3.77, 2.54, -99.66, 5.88, 33.13] raw_delta=[-1.407, 0.6, 0.164, -3.15, -0.35, 0.496] scaled_delta=[-0.703, 0.3, 0.082, -1.575, -0.175, 0.248] clamped_delta=[-0.703, 0.3, 0.082, -1.575, -0.175, 0.248] target=[-98.78, 4.07, 2.62, -101.24, 5.71, 33.38] gripper=80.0->model:82.0 command:82.0 qpos_source=forced qpos_stale_steps=144 qpos_age=0.004 qpos_stale=warn
+  http sent=[] server_delta=None
+replanned action chunk at step=150
+step=150 mode=target current=[-98.08, 3.77, 2.54, -99.66, 5.88, 33.13] raw_delta=[-1.411, 0.649, 0.089, -3.024, -0.363, 0.4] scaled_delta=[-0.706, 0.325, 0.045, -1.512, -0.181, 0.2] clamped_delta=[-0.706, 0.325, 0.045, -1.512, -0.181, 0.2] target=[-98.79, 4.09, 2.58, -101.17, 5.7, 33.33] gripper=80.0->model:82.0 command:82.0 qpos_source=forced qpos_stale_steps=145 qpos_age=0.005 qpos_stale=warn
+  http sent=[] server_delta=None
+step=151 mode=target current=[-98.08, 3.77, 2.54, -99.66, 5.88, 33.13] raw_delta=[-1.339, 0.719, 0.107, -3.094, -0.299, 0.427] scaled_delta=[-0.669, 0.359, 0.053, -1.547, -0.15, 0.214] clamped_delta=[-0.669, 0.359, 0.053, -1.547, -0.15, 0.214] target=[-98.75, 4.13, 2.59, -101.21, 5.73, 33.34] gripper=80.0->model:82.0 command:82.0 qpos_source=forced qpos_stale_steps=146 qpos_age=-0.002 qpos_stale=warn
+  http sent=[] server_delta=None
+step=152 mode=target current=[-98.08, 3.77, 2.54, -99.66, 5.88, 33.13] raw_delta=[-1.354, 0.741, 0.103, -3.117, -0.308, 0.431] scaled_delta=[-0.677, 0.371, 0.051, -1.559, -0.154, 0.216] clamped_delta=[-0.677, 0.371, 0.051, -1.559, -0.154, 0.216] target=[-98.76, 4.14, 2.59, -101.22, 5.73, 33.35] gripper=80.0->model:82.1 command:82.1 qpos_source=forced qpos_stale_steps=147 qpos_age=-0.002 qpos_stale=warn
+  http sent=[] server_delta=None
+step=153 mode=target current=[-98.08, 3.77, 2.54, -99.66, 5.88, 33.13] raw_delta=[-1.277, 0.67, 0.119, -3.022, -0.296, 0.449] scaled_delta=[-0.639, 0.335, 0.059, -1.511, -0.148, 0.225] clamped_delta=[-0.639, 0.335, 0.059, -1.511, -0.148, 0.225] target=[-98.72, 4.1, 2.6, -101.17, 5.73, 33.35] gripper=80.0->model:82.1 command:82.1 qpos_source=forced qpos_stale_steps=148 qpos_age=0.001 qpos_stale=warn
+  http sent=[] server_delta=None
+step=154 mode=target current=[-98.08, 3.77, 2.54, -99.66, 5.88, 33.13] raw_delta=[-1.163, 0.762, 0.134, -3.102, -0.215, 0.438] scaled_delta=[-0.582, 0.381, 0.067, -1.551, -0.108, 0.219] clamped_delta=[-0.582, 0.381, 0.067, -1.551, -0.108, 0.219] target=[-98.66, 4.15, 2.61, -101.21, 5.77, 33.35] gripper=80.0->model:82.1 command:82.1 qpos_source=forced qpos_stale_steps=149 qpos_age=0.004 qpos_stale=warn
+  http sent=[] server_delta=None
+replanned action chunk at step=155
+step=155 mode=target current=[-98.08, 3.77, 2.54, -99.66, 5.88, 33.13] raw_delta=[-1.481, 0.681, 0.029, -3.053, -0.522, 0.433] scaled_delta=[-0.741, 0.34, 0.014, -1.527, -0.261, 0.217] clamped_delta=[-0.741, 0.34, 0.014, -1.527, -0.261, 0.217] target=[-98.82, 4.11, 2.55, -101.19, 5.62, 33.35] gripper=80.0->model:82.1 command:82.1 qpos_source=forced qpos_stale_steps=150 qpos_age=-0.002 qpos_stale=warn
+  http sent=[] server_delta=None
+step=156 mode=target current=[-98.08, 3.77, 2.54, -99.66, 5.88, 33.13] raw_delta=[-1.427, 0.747, 0.048, -3.134, -0.465, 0.468] scaled_delta=[-0.714, 0.374, 0.024, -1.567, -0.233, 0.234] clamped_delta=[-0.714, 0.374, 0.024, -1.567, -0.233, 0.234] target=[-98.79, 4.14, 2.56, -101.23, 5.65, 33.36] gripper=80.0->model:82.1 command:82.1 qpos_source=forced qpos_stale_steps=151 qpos_age=0.005 qpos_stale=warn
+  http sent=[] server_delta=None
+step=157 mode=target current=[-98.08, 3.77, 2.54, -99.66, 5.88, 33.13] raw_delta=[-1.429, 0.763, 0.042, -3.144, -0.472, 0.468] scaled_delta=[-0.715, 0.381, 0.021, -1.572, -0.236, 0.234] clamped_delta=[-0.715, 0.381, 0.021, -1.572, -0.236, 0.234] target=[-98.79, 4.15, 2.56, -101.23, 5.64, 33.36] gripper=80.0->model:82.1 command:82.1 qpos_source=forced qpos_stale_steps=152 qpos_age=-0.002 qpos_stale=warn
+  http sent=[] server_delta=None
+step=158 mode=target current=[-98.08, 3.77, 2.54, -99.66, 5.88, 33.13] raw_delta=[-1.356, 0.71, 0.073, -3.068, -0.465, 0.481] scaled_delta=[-0.678, 0.355, 0.037, -1.534, -0.232, 0.241] clamped_delta=[-0.678, 0.355, 0.037, -1.534, -0.232, 0.241] target=[-98.76, 4.12, 2.58, -101.19, 5.65, 33.37] gripper=80.0->model:82.2 command:82.2 qpos_source=forced qpos_stale_steps=153 qpos_age=0.004 qpos_stale=warn
+  http sent=[] server_delta=None
+step=159 mode=target current=[-98.08, 3.77, 2.54, -99.66, 5.88, 33.13] raw_delta=[-1.225, 0.768, 0.083, -3.102, -0.384, 0.478] scaled_delta=[-0.612, 0.384, 0.041, -1.551, -0.192, 0.239] clamped_delta=[-0.612, 0.384, 0.041, -1.551, -0.192, 0.239] target=[-98.69, 4.15, 2.58, -101.21, 5.69, 33.37] gripper=80.0->model:82.2 command:82.2 qpos_source=forced qpos_stale_steps=154 qpos_age=0.003 qpos_stale=warn
+  http sent=[] server_delta=None
+replanned action chunk at step=160
+step=160 mode=target current=[-98.08, 3.77, 2.54, -99.66, 5.88, 33.13] raw_delta=[-1.663, 0.469, 0.069, -2.854, -0.404, 0.358] scaled_delta=[-0.831, 0.234, 0.035, -1.427, -0.202, 0.179] clamped_delta=[-0.831, 0.234, 0.035, -1.427, -0.202, 0.179] target=[-98.91, 4.0, 2.57, -101.09, 5.68, 33.31] gripper=80.0->model:82.1 command:82.1 qpos_source=forced qpos_stale_steps=155 qpos_age=0.005 qpos_stale=warn
+  http sent=[] server_delta=None
+step=161 mode=target current=[-98.08, 3.77, 2.54, -99.66, 5.88, 33.13] raw_delta=[-1.587, 0.544, 0.091, -2.948, -0.344, 0.394] scaled_delta=[-0.793, 0.272, 0.046, -1.474, -0.172, 0.197] clamped_delta=[-0.793, 0.272, 0.046, -1.474, -0.172, 0.197] target=[-98.87, 4.04, 2.59, -101.13, 5.71, 33.33] gripper=80.0->model:82.1 command:82.1 qpos_source=forced qpos_stale_steps=156 qpos_age=-0.004 qpos_stale=warn
+  http sent=[] server_delta=None
+step=162 mode=target current=[-98.08, 3.77, 2.54, -99.66, 5.88, 33.13] raw_delta=[-1.606, 0.56, 0.089, -2.956, -0.352, 0.395] scaled_delta=[-0.803, 0.28, 0.045, -1.478, -0.176, 0.197] clamped_delta=[-0.803, 0.28, 0.045, -1.478, -0.176, 0.197] target=[-98.88, 4.05, 2.58, -101.14, 5.7, 33.33] gripper=80.0->model:82.1 command:82.1 qpos_source=forced qpos_stale_steps=157 qpos_age=0.003 qpos_stale=warn
+  http sent=[] server_delta=None
+step=163 mode=target current=[-98.08, 3.77, 2.54, -99.66, 5.88, 33.13] raw_delta=[-1.52, 0.475, 0.107, -2.888, -0.34, 0.417] scaled_delta=[-0.76, 0.238, 0.054, -1.444, -0.17, 0.208] clamped_delta=[-0.76, 0.238, 0.054, -1.444, -0.17, 0.208] target=[-98.84, 4.01, 2.59, -101.1, 5.71, 33.34] gripper=80.0->model:82.2 command:82.2 qpos_source=forced qpos_stale_steps=158 qpos_age=0.0 qpos_stale=warn
+  http sent=[] server_delta=None
+step=164 mode=target current=[-98.08, 3.77, 2.54, -99.66, 5.88, 33.13] raw_delta=[-1.406, 0.542, 0.129, -2.945, -0.26, 0.408] scaled_delta=[-0.703, 0.271, 0.064, -1.473, -0.13, 0.204] clamped_delta=[-0.703, 0.271, 0.064, -1.473, -0.13, 0.204] target=[-98.78, 4.04, 2.6, -101.13, 5.75, 33.33] gripper=80.0->model:82.2 command:82.2 qpos_source=forced qpos_stale_steps=159 qpos_age=0.002 qpos_stale=warn
+  http sent=[] server_delta=None
+replanned action chunk at step=165
+step=165 mode=target current=[-98.08, 3.77, 2.54, -99.66, 5.88, 33.13] raw_delta=[-1.732, 0.563, 0.041, -2.843, -0.508, 0.406] scaled_delta=[-0.866, 0.282, 0.021, -1.421, -0.254, 0.203] clamped_delta=[-0.866, 0.282, 0.021, -1.421, -0.254, 0.203] target=[-98.95, 4.05, 2.56, -101.08, 5.63, 33.33] gripper=80.0->model:82.3 command:82.3 qpos_source=forced qpos_stale_steps=160 qpos_age=-0.007 qpos_stale=warn
+  http sent=[] server_delta=None
+step=166 mode=target current=[-98.08, 3.77, 2.54, -99.66, 5.88, 33.13] raw_delta=[-1.648, 0.607, 0.059, -2.914, -0.45, 0.442] scaled_delta=[-0.824, 0.303, 0.03, -1.457, -0.225, 0.221] clamped_delta=[-0.824, 0.303, 0.03, -1.457, -0.225, 0.221] target=[-98.9, 4.07, 2.57, -101.12, 5.65, 33.35] gripper=80.0->model:82.3 command:82.3 qpos_source=forced qpos_stale_steps=161 qpos_age=-0.0 qpos_stale=warn
+  http sent=[] server_delta=None
+step=167 mode=target current=[-98.08, 3.77, 2.54, -99.66, 5.88, 33.13] raw_delta=[-1.668, 0.626, 0.056, -2.929, -0.459, 0.438] scaled_delta=[-0.834, 0.313, 0.028, -1.465, -0.229, 0.219] clamped_delta=[-0.834, 0.313, 0.028, -1.465, -0.229, 0.219] target=[-98.91, 4.08, 2.57, -101.12, 5.65, 33.35] gripper=80.0->model:82.3 command:82.3 qpos_source=forced qpos_stale_steps=162 qpos_age=0.0 qpos_stale=warn
+  http sent=[] server_delta=None
+step=168 mode=target current=[-98.08, 3.77, 2.54, -99.66, 5.88, 33.13] raw_delta=[-1.568, 0.558, 0.082, -2.834, -0.449, 0.468] scaled_delta=[-0.784, 0.279, 0.041, -1.417, -0.224, 0.234] clamped_delta=[-0.784, 0.279, 0.041, -1.417, -0.224, 0.234] target=[-98.86, 4.05, 2.58, -101.08, 5.66, 33.36] gripper=80.0->model:82.3 command:82.3 qpos_source=forced qpos_stale_steps=163 qpos_age=-0.002 qpos_stale=warn
+  http sent=[] server_delta=None
+step=169 mode=target current=[-98.08, 3.77, 2.54, -99.66, 5.88, 33.13] raw_delta=[-1.443, 0.61, 0.101, -2.879, -0.364, 0.458] scaled_delta=[-0.722, 0.305, 0.051, -1.44, -0.182, 0.229] clamped_delta=[-0.722, 0.305, 0.051, -1.44, -0.182, 0.229] target=[-98.8, 4.07, 2.59, -101.1, 5.7, 33.36] gripper=80.0->model:82.3 command:82.3 qpos_source=forced qpos_stale_steps=164 qpos_age=-0.0 qpos_stale=warn
+  http sent=[] server_delta=None
+replanned action chunk at step=170
+step=170 mode=target current=[-98.08, 3.77, 2.54, -99.66, 5.88, 33.13] raw_delta=[-1.623, 0.356, 0.021, -2.66, -0.543, 0.39] scaled_delta=[-0.811, 0.178, 0.011, -1.33, -0.271, 0.195] clamped_delta=[-0.811, 0.178, 0.011, -1.33, -0.271, 0.195] target=[-98.89, 3.95, 2.55, -100.99, 5.61, 33.33] gripper=80.0->model:82.2 command:82.2 qpos_source=forced qpos_stale_steps=165 qpos_age=0.001 qpos_stale=warn
+  http sent=[] server_delta=None
+step=171 mode=target current=[-98.08, 3.77, 2.54, -99.66, 5.88, 33.13] raw_delta=[-1.546, 0.425, 0.038, -2.734, -0.487, 0.42] scaled_delta=[-0.773, 0.213, 0.019, -1.367, -0.243, 0.21] clamped_delta=[-0.773, 0.213, 0.019, -1.367, -0.243, 0.21] target=[-98.85, 3.98, 2.56, -101.03, 5.64, 33.34] gripper=80.0->model:82.2 command:82.2 qpos_source=forced qpos_stale_steps=166 qpos_age=-0.007 qpos_stale=warn
+  http sent=[] server_delta=None
+step=172 mode=target current=[-98.08, 3.77, 2.54, -99.66, 5.88, 33.13] raw_delta=[-1.569, 0.438, 0.036, -2.75, -0.495, 0.42] scaled_delta=[-0.784, 0.219, 0.018, -1.375, -0.247, 0.21] clamped_delta=[-0.784, 0.219, 0.018, -1.375, -0.247, 0.21] target=[-98.86, 3.99, 2.56, -101.04, 5.63, 33.34] gripper=80.0->model:82.2 command:82.2 qpos_source=forced qpos_stale_steps=167 qpos_age=-0.002 qpos_stale=warn
+  http sent=[] server_delta=None
+step=173 mode=target current=[-98.08, 3.77, 2.54, -99.66, 5.88, 33.13] raw_delta=[-1.489, 0.374, 0.06, -2.684, -0.483, 0.439] scaled_delta=[-0.744, 0.187, 0.03, -1.342, -0.241, 0.22] clamped_delta=[-0.744, 0.187, 0.03, -1.342, -0.241, 0.22] target=[-98.82, 3.96, 2.57, -101.0, 5.64, 33.35] gripper=80.0->model:82.3 command:82.3 qpos_source=forced qpos_stale_steps=168 qpos_age=-0.002 qpos_stale=warn
+  http sent=[] server_delta=None
+step=174 mode=target current=[-98.08, 3.77, 2.54, -99.66, 5.88, 33.13] raw_delta=[-1.366, 0.449, 0.084, -2.73, -0.406, 0.439] scaled_delta=[-0.683, 0.224, 0.042, -1.365, -0.203, 0.22] clamped_delta=[-0.683, 0.224, 0.042, -1.365, -0.203, 0.22] target=[-98.76, 3.99, 2.58, -101.02, 5.68, 33.35] gripper=80.0->model:82.3 command:82.3 qpos_source=forced qpos_stale_steps=169 qpos_age=0.007 qpos_stale=warn
+  http sent=[] server_delta=None
+replanned action chunk at step=175
+step=175 mode=target current=[-98.08, 3.77, 2.54, -99.66, 5.88, 33.13] raw_delta=[-1.757, 0.579, -0.006, -2.895, -0.489, 0.316] scaled_delta=[-0.878, 0.289, -0.003, -1.448, -0.245, 0.158] clamped_delta=[-0.878, 0.289, -0.003, -1.448, -0.245, 0.158] target=[-98.96, 4.06, 2.54, -101.11, 5.64, 33.29] gripper=80.0->model:82.5 command:82.5 qpos_source=forced qpos_stale_steps=170 qpos_age=-0.001 qpos_stale=warn
+  http sent=[] server_delta=None
+step=176 mode=target current=[-98.08, 3.77, 2.54, -99.66, 5.88, 33.13] raw_delta=[-1.671, 0.662, 0.007, -2.966, -0.427, 0.348] scaled_delta=[-0.835, 0.331, 0.003, -1.483, -0.214, 0.174] clamped_delta=[-0.835, 0.331, 0.003, -1.483, -0.214, 0.174] target=[-98.92, 4.1, 2.54, -101.14, 5.67, 33.3] gripper=80.0->model:82.5 command:82.5 qpos_source=forced qpos_stale_steps=171 qpos_age=0.008 qpos_stale=warn
+  http sent=[] server_delta=None
+step=177 mode=target current=[-98.08, 3.77, 2.54, -99.66, 5.88, 33.13] raw_delta=[-1.683, 0.685, 0.011, -3.009, -0.436, 0.345] scaled_delta=[-0.841, 0.342, 0.005, -1.504, -0.218, 0.172] clamped_delta=[-0.841, 0.342, 0.005, -1.504, -0.218, 0.172] target=[-98.92, 4.11, 2.55, -101.16, 5.66, 33.3] gripper=80.0->model:82.5 command:82.5 qpos_source=forced qpos_stale_steps=172 qpos_age=0.006 qpos_stale=warn
+  http sent=[] server_delta=None
+step=178 mode=target current=[-98.08, 3.77, 2.54, -99.66, 5.88, 33.13] raw_delta=[-1.622, 0.63, 0.027, -2.903, -0.428, 0.351] scaled_delta=[-0.811, 0.315, 0.013, -1.451, -0.214, 0.176] clamped_delta=[-0.811, 0.315, 0.013, -1.451, -0.214, 0.176] target=[-98.89, 4.08, 2.55, -101.11, 5.67, 33.31] gripper=80.0->model:82.6 command:82.6 qpos_source=forced qpos_stale_steps=173 qpos_age=0.002 qpos_stale=warn
+  http sent=[] server_delta=None
+step=179 mode=target current=[-98.08, 3.77, 2.54, -99.66, 5.88, 33.13] raw_delta=[-1.502, 0.688, 0.052, -2.971, -0.347, 0.335] scaled_delta=[-0.751, 0.344, 0.026, -1.485, -0.174, 0.167] clamped_delta=[-0.751, 0.344, 0.026, -1.485, -0.174, 0.167] target=[-98.83, 4.11, 2.57, -101.15, 5.71, 33.3] gripper=80.0->model:82.6 command:82.6 qpos_source=forced qpos_stale_steps=174 qpos_age=0.001 qpos_stale=warn
+  http sent=[] server_delta=None
+replanned action chunk at step=180
+step=180 mode=target current=[-98.08, 3.77, 2.54, -99.66, 5.88, 33.13] raw_delta=[-1.417, 0.637, 0.033, -2.944, -0.39, 0.294] scaled_delta=[-0.708, 0.318, 0.016, -1.472, -0.195, 0.147] clamped_delta=[-0.708, 0.318, 0.016, -1.472, -0.195, 0.147] target=[-98.79, 4.09, 2.56, -101.13, 5.68, 33.28] gripper=80.0->model:82.1 command:82.1 qpos_source=forced qpos_stale_steps=175 qpos_age=-0.001 qpos_stale=warn
+  http sent=[] server_delta=None
+step=181 mode=target current=[-98.08, 3.77, 2.54, -99.66, 5.88, 33.13] raw_delta=[-1.34, 0.71, 0.051, -3.045, -0.326, 0.326] scaled_delta=[-0.67, 0.355, 0.025, -1.522, -0.163, 0.163] clamped_delta=[-0.67, 0.355, 0.025, -1.522, -0.163, 0.163] target=[-98.75, 4.12, 2.57, -101.18, 5.72, 33.29] gripper=80.0->model:82.1 command:82.1 qpos_source=forced qpos_stale_steps=176 qpos_age=0.0 qpos_stale=warn
+  http sent=[] server_delta=None
+step=182 mode=target current=[-98.08, 3.77, 2.54, -99.66, 5.88, 33.13] raw_delta=[-1.356, 0.718, 0.042, -3.049, -0.339, 0.331] scaled_delta=[-0.678, 0.359, 0.021, -1.525, -0.169, 0.165] clamped_delta=[-0.678, 0.359, 0.021, -1.525, -0.169, 0.165] target=[-98.76, 4.13, 2.56, -101.18, 5.71, 33.3] gripper=80.0->model:82.1 command:82.1 qpos_source=forced qpos_stale_steps=177 qpos_age=-0.002 qpos_stale=warn
+  http sent=[] server_delta=None
+step=183 mode=target current=[-98.08, 3.77, 2.54, -99.66, 5.88, 33.13] raw_delta=[-1.275, 0.636, 0.072, -2.966, -0.324, 0.356] scaled_delta=[-0.638, 0.318, 0.036, -1.483, -0.162, 0.178] clamped_delta=[-0.638, 0.318, 0.036, -1.483, -0.162, 0.178] target=[-98.72, 4.09, 2.58, -101.14, 5.72, 33.31] gripper=80.0->model:82.1 command:82.1 qpos_source=forced qpos_stale_steps=178 qpos_age=0.005 qpos_stale=warn
+  http sent=[] server_delta=None
+step=184 mode=target current=[-98.08, 3.77, 2.54, -99.66, 5.88, 33.13] raw_delta=[-1.161, 0.707, 0.09, -3.012, -0.241, 0.345] scaled_delta=[-0.581, 0.354, 0.045, -1.506, -0.12, 0.172] clamped_delta=[-0.581, 0.354, 0.045, -1.506, -0.12, 0.172] target=[-98.66, 4.12, 2.58, -101.17, 5.76, 33.3] gripper=80.0->model:82.1 command:82.1 qpos_source=forced qpos_stale_steps=179 qpos_age=-0.001 qpos_stale=warn
+  http sent=[] server_delta=None
+replanned action chunk at step=185
+step=185 mode=target current=[-98.08, 3.77, 2.54, -99.66, 5.88, 33.13] raw_delta=[-1.091, 0.377, 0.04, -2.736, -0.345, 0.422] scaled_delta=[-0.546, 0.188, 0.02, -1.368, -0.173, 0.211] clamped_delta=[-0.546, 0.188, 0.02, -1.368, -0.173, 0.211] target=[-98.63, 3.96, 2.56, -101.03, 5.71, 33.34] gripper=80.0->model:82.2 command:82.2 qpos_source=forced qpos_stale_steps=180 qpos_age=0.001 qpos_stale=warn
+  http sent=[] server_delta=None
+step=186 mode=target current=[-98.08, 3.77, 2.54, -99.66, 5.88, 33.13] raw_delta=[-1.016, 0.453, 0.056, -2.815, -0.277, 0.45] scaled_delta=[-0.508, 0.227, 0.028, -1.407, -0.139, 0.225] clamped_delta=[-0.508, 0.227, 0.028, -1.407, -0.139, 0.225] target=[-98.59, 4.0, 2.57, -101.07, 5.74, 33.36] gripper=80.0->model:82.3 command:82.3 qpos_source=forced qpos_stale_steps=181 qpos_age=-0.0 qpos_stale=warn
+  http sent=[] server_delta=None
+step=187 mode=target current=[-98.08, 3.77, 2.54, -99.66, 5.88, 33.13] raw_delta=[-1.045, 0.464, 0.055, -2.843, -0.29, 0.449] scaled_delta=[-0.523, 0.232, 0.028, -1.421, -0.145, 0.224] clamped_delta=[-0.523, 0.232, 0.028, -1.421, -0.145, 0.224] target=[-98.6, 4.0, 2.57, -101.08, 5.74, 33.35] gripper=80.0->model:82.3 command:82.3 qpos_source=forced qpos_stale_steps=182 qpos_age=-0.002 qpos_stale=warn
+  http sent=[] server_delta=None
+step=188 mode=target current=[-98.08, 3.77, 2.54, -99.66, 5.88, 33.13] raw_delta=[-0.957, 0.409, 0.076, -2.771, -0.274, 0.469] scaled_delta=[-0.479, 0.205, 0.038, -1.386, -0.137, 0.234] clamped_delta=[-0.479, 0.205, 0.038, -1.386, -0.137, 0.234] target=[-98.56, 3.97, 2.58, -101.05, 5.74, 33.36] gripper=80.0->model:82.3 command:82.3 qpos_source=forced qpos_stale_steps=183 qpos_age=-0.002 qpos_stale=warn
+  http sent=[] server_delta=None
+step=189 mode=target current=[-98.08, 3.77, 2.54, -99.66, 5.88, 33.13] raw_delta=[-0.849, 0.468, 0.09, -2.791, -0.195, 0.462] scaled_delta=[-0.425, 0.234, 0.045, -1.395, -0.098, 0.231] clamped_delta=[-0.425, 0.234, 0.045, -1.395, -0.098, 0.231] target=[-98.5, 4.0, 2.59, -101.06, 5.78, 33.36] gripper=80.0->model:82.3 command:82.3 qpos_source=forced qpos_stale_steps=184 qpos_age=0.0 qpos_stale=warn
+  http sent=[] server_delta=None
+replanned action chunk at step=190
+step=190 mode=target current=[-98.08, 3.77, 2.54, -99.66, 5.88, 33.13] raw_delta=[-1.608, 0.419, 0.097, -2.726, -0.333, 0.216] scaled_delta=[-0.804, 0.209, 0.048, -1.363, -0.167, 0.108] clamped_delta=[-0.804, 0.209, 0.048, -1.363, -0.167, 0.108] target=[-98.88, 3.98, 2.59, -101.02, 5.71, 33.24] gripper=80.0->model:82.2 command:82.2 qpos_source=forced qpos_stale_steps=185 qpos_age=-0.0 qpos_stale=warn
+  http sent=[] server_delta=None
+step=191 mode=target current=[-98.08, 3.77, 2.54, -99.66, 5.88, 33.13] raw_delta=[-1.531, 0.484, 0.125, -2.822, -0.274, 0.254] scaled_delta=[-0.766, 0.242, 0.063, -1.411, -0.137, 0.127] clamped_delta=[-0.766, 0.242, 0.063, -1.411, -0.137, 0.127] target=[-98.85, 4.01, 2.6, -101.07, 5.74, 33.26] gripper=80.0->model:82.2 command:82.2 qpos_source=forced qpos_stale_steps=186 qpos_age=0.002 qpos_stale=warn
+  http sent=[] server_delta=None
+step=192 mode=target current=[-98.08, 3.77, 2.54, -99.66, 5.88, 33.13] raw_delta=[-1.554, 0.535, 0.114, -2.848, -0.286, 0.249] scaled_delta=[-0.777, 0.267, 0.057, -1.424, -0.143, 0.124] clamped_delta=[-0.777, 0.267, 0.057, -1.424, -0.143, 0.124] target=[-98.86, 4.04, 2.6, -101.08, 5.74, 33.25] gripper=80.0->model:82.2 command:82.2 qpos_source=forced qpos_stale_steps=187 qpos_age=-0.001 qpos_stale=warn
+  http sent=[] server_delta=None
+step=193 mode=target current=[-98.08, 3.77, 2.54, -99.66, 5.88, 33.13] raw_delta=[-1.473, 0.437, 0.141, -2.756, -0.274, 0.29] scaled_delta=[-0.736, 0.219, 0.07, -1.378, -0.137, 0.145] clamped_delta=[-0.736, 0.219, 0.07, -1.378, -0.137, 0.145] target=[-98.82, 3.99, 2.61, -101.04, 5.74, 33.27] gripper=80.0->model:82.3 command:82.3 qpos_source=forced qpos_stale_steps=188 qpos_age=0.004 qpos_stale=warn
+  http sent=[] server_delta=None
+step=194 mode=target current=[-98.08, 3.77, 2.54, -99.66, 5.88, 33.13] raw_delta=[-1.377, 0.537, 0.162, -2.807, -0.192, 0.27] scaled_delta=[-0.689, 0.268, 0.081, -1.403, -0.096, 0.135] clamped_delta=[-0.689, 0.268, 0.081, -1.403, -0.096, 0.135] target=[-98.77, 4.04, 2.62, -101.06, 5.78, 33.27] gripper=80.0->model:82.3 command:82.3 qpos_source=forced qpos_stale_steps=189 qpos_age=-0.001 qpos_stale=warn
+  http sent=[] server_delta=None
+replanned action chunk at step=195
+
+stopped

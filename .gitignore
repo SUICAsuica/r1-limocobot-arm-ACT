@@ -1,0 +1,27 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+env/
+
+# Local machine and generated files
+.DS_Store
+*.tmp
+*.bak
+
+# Keep very large local model downloads out of the repository.
+models/
+checkpoints/
+*.safetensors
+*.ckpt
+*.pth
+*.pt
+
+# Isaac Sim and ROS build outputs are machine-specific and very large.
+isaacsim/
+limo_pro2_ws/build/
+limo_pro2_ws/install/
+limo_pro2_ws/log/

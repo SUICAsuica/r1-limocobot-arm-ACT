@@ -1,0 +1,14 @@
+log file: /home/shori/act_logs/run_20260515_145943_simple.log
+command: /home/shori/run_act_policy_on_limo.py --policy-path /home/shori/outputs/train/act_limo_cobot_20hz_target_h10_chunk50/checkpoints/015000/pretrained_model --limo-url http://192.168.0.161:8001 --command-url http://192.168.0.161:8002 --angles-url http://192.168.0.161:8002/angles --force-angles-url --command-mode http --action-mode target --hz 10 --steps 300 --replan-steps 100 --action-scale 0.5 --joint-max-delta-deg 3,3,1.5,3,1,1 --speed 20 --fallback-gripper 80 --enable-motion --gripper-mode model_latch --gripper-latch-threshold 35 --gripper-latch-value 10 --log-file /home/shori/act_logs/run_20260515_145943_simple.log
+loading policy: /home/shori/outputs/train/act_limo_cobot_20hz_target_h10_chunk50/checkpoints/015000/pretrained_model
+Loading weights from local directory
+policy loaded
+motion enabled: HTTP http://192.168.0.161:8002 speed=20
+policy: /home/shori/outputs/train/act_limo_cobot_20hz_target_h10_chunk50/checkpoints/015000/pretrained_model
+observation: http://192.168.0.161:8001/state.json + /image.jpg
+fallback angles: http://192.168.0.161:8002/angles
+Ctrl-C to stop
+step=0 mode=target current=[-100.1, 1.66, 2.63, -99.49, 6.32, 33.57] raw_delta=[-0.413, 5.263, -0.43, -3.655, -0.392, -0.147] scaled_delta=[-0.207, 2.632, -0.215, -1.828, -0.196, -0.073] clamped_delta=[-0.207, 2.632, -0.215, -1.828, -0.196, -0.073] target=[-100.31, 4.29, 2.41, -101.32, 6.12, 33.5] gripper=80.0->model:80.2 command:80.2 qpos_source=forced qpos_stale_steps=0 qpos_age=0.014 qpos_stale=ok
+  http sent=[] server_delta=None
+  gripper sent=80 result=-1
+step=1 mode=target current=[-100.1, 3.07, 2.63, -99.66, 6.32, 33.57] raw_delta=[-0.402, 3.851, -0.394, -3.616, -0.337, -0.102] scaled_delta=[-0.201, 1.925, -0.197, -1.808, -0.169, -0.051] clamped_delta=[-0.201, 1.925, -0.197, -1.808, -0.169, -0.051] target=[-100.3, 5.0, 2.43, -101.47, 6.15, 33.52] gripper=80.0->model:80.2 command:80.2 qpos_source=forced qpos_stale_steps=0 qpos_age=0.013 qpos_stale=ok

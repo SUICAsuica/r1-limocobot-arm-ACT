@@ -1,0 +1,9 @@
+numpy
+opencv-python
+pillow
+pyarrow
+pymycobot
+qwen-vl-utils
+torch
+transformers
+lerobot
