@@ -26,6 +26,7 @@ LIMO Pro2 に搭載した myCobot 280 を対象に、カメラ画像と関節状
 
 | ファイル | 用途 |
 | --- | --- |
+| `scripts/record_mycobot_lerobot.py` | myCobot と OpenCV カメラから直接 LeRobotDataset を記録 |
 | `scripts/dataset_logger.py` | HTTP 経由で画像・状態・アクションを記録する簡易データロガー |
 | `scripts/limo_pull_dataset_collector.py` | LIMO 側のデータを取得してエピソードとして保存 |
 | `scripts/convert_limo_dataset_to_lerobot.py` | 収集データを LeRobotDataset 形式へ変換 |
@@ -45,8 +46,8 @@ LIMO Pro2 に搭載した myCobot 280 を対象に、カメラ画像と関節状
 
 - `limo_cobot_20hz_target_h10_train`
 - `limo_cobot_20hz_target_h10_val`
-- `limo_cobot_blue_buddha_20hz_target_h10_train`
-- `limo_cobot_blue_buddha_20hz_target_h10_val`
+- `limo_cobot_blue_object_20hz_target_h10_train`
+- `limo_cobot_blue_object_20hz_target_h10_val`
 - `limo_cobot_center`
 - `limo_cobot_center_h5_train`
 - `limo_cobot_center_h5_val`
@@ -60,6 +61,20 @@ LIMO Pro2 に搭載した myCobot 280 を対象に、カメラ画像と関節状
 `logs/act_logs/` には 2026-05-15 に実機で ACT policy を試したログを保存しています。`act_logs_visuals/` には収集エピソードの画像確認用コンタクトシートを置いています。
 
 詳細な作業履歴は `docs/LIMO_COBOT_ACT_PROGRESS_SUMMARY.md` を参照してください。
+
+## Research Documents
+
+- [Research Vision](docs/RESEARCH_VISION.md)  
+  災害環境で人命救助に役立つアーム付き移動ロボットという最終目標を整理した資料。
+
+- [Architecture Plan](docs/ARCHITECTURE_PLAN.md)  
+  VLM、LLM、Uni-NaVid、ACT/action expert、LIMO Pro2、myCobot280を統合する全体構成案。
+
+- [ACT Task Roadmap](docs/ACT_TASK_ROADMAP.md)  
+  myCobot280にACTで学習させるタスク、episode数、評価方法の計画。
+
+- [Dataset Strategy](docs/DATASET_STRATEGY.md)  
+  既存データを使える部分と、自作する必要があるデータ、LeRobot形式での保存方針。
 
 ## セットアップ概要
 
@@ -76,6 +91,22 @@ ROS2 や実機環境の詳細は以下のメモを参照してください。
 - `docs/LIMO_ISAACSIM_SETUP.md`
 
 ## よく使うコマンド例
+
+myCobot から直接 LeRobotDataset を記録:
+
+```bash
+python scripts/record_mycobot_lerobot.py \
+  --repo-id local/mycobot_blue_object_test \
+  --root data/lerobot_datasets/mycobot_blue_object_test \
+  --task "Grasp the blue object" \
+  --fps 20 \
+  --num-episodes 2 \
+  --episode-time-s 20 \
+  --camera-index 0 \
+  --port /dev/ttyACM0 \
+  --free-mode \
+  --overwrite
+```
 
 LeRobot データセットの変換:
 
